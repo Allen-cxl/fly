@@ -1,0 +1,55 @@
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/" style="margin:0px;">
+            <img src="/{$sys.logo}" height="50" class="d-inline-block align-top" alt="空运舱">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item <eq name="nav" value="1">active</eq>" >
+                    <a class="nav-link" href="/home/index/index">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item <eq name="nav" value="2">active</eq>">
+                    <a class="nav-link" href="/home/index/index/y/tj">运价查询</a>
+                </li>
+				<li class="nav-item <eq name="nav" value="3">active</eq>">
+                    <a class="nav-link" href="/home/index/index/y/line">推荐航线</a>
+                </li>
+                <li class="nav-item  dropdown <eq name="nav" value="4">active</eq>">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        空运工具
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/home/index/index/y/three">三字代码查询</a>
+                        <a class="dropdown-item" href="/home/index/index/y/goods">空运货物查询</a>
+                    </div>
+                </li>
+                <li class="nav-item <eq name="nav" value="5">active</eq>">
+                    <a class="nav-link" href="/home/index/index/y/newslist">空运新闻</a>
+                </li>
+				<li class="nav-item <eq name="nav" value="7">active</eq>" >
+                    <a class="nav-link" href="/home/index/index/y/about">公司介绍 <span class="sr-only">(current)</span></a>
+                </li>
+				<eq name="islog" value="1">
+					<li class="nav-item <eq name="nav" value="6">active</eq> ">
+						<a class="nav-link d-inline-block text-truncate" style="max-width: 150px;" href="/home/user/center"
+						   id="header-user">{$uarr.name}</a>
+					</li>
+					<li class="nav-item" onclick="javascript:window.location.href='/home/user/logout'">
+						<a class="nav-link"><i class="fa fa-sign-out"></i></a>
+					</li>
+				<else/>
+					<li class="nav-item <eq name="nav" value="6">active</eq> ">
+						<a class="nav-link d-inline-block text-truncate" style="max-width: 150px;" href="/home/user/center"
+						   id="header-user">我的账户</a>
+					</li>
+				</eq>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,60 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>消息列表</h2>
+	</div>
+<style type="text/css">
+.gejian span{
+padding-left:10px;
+}
+</style>
+
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>UID</th>
+					<th>名称</th>
+					<th>PIC</th>
+					<th>未读</th>
+					
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.uid}</td>		
+						<td>{$vo.name}</td>
+						<td><img src="{$vo.pic}" width="50" height="50" /></td>
+						<td class="gejian">{$vo.num}条</td>
+						<td>
+							<a title="编辑" href="{:U('tuser/csms',"uid=".$vo["uid"])}">回复</a>
+							</td>
+					</tr>
+				</volist>
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+           {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('tuser/clists')}');
+		})
+	</script>
+</block>

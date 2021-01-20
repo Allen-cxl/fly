@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+    <title>{$sys.title}</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+
+        <link href="/Public/Home/twentynineteen/css/register.css" rel="stylesheet">
+<link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <script type="text/javascript" src="/Public/Home/twentynineteen/js/jquery-2.0.3.min.js"></script>
+
+</head>
+<body>
+<include file="Public/nav" />
+
+<div id="loading"
+     style="position: fixed;width: 100vw;height: 100vh;z-index: 999; background-color:rgba(0, 0, 0, 0.4); display: none;">
+<div
+            style="background-image: url(/Public/Home/twentynineteen/img/loading.gif);width: 90px;height: 90px;position: absolute;left: 50%;top: 30%;margin-left: -30px;border-radius: 50%;transform: rotateY(180deg);background-size: cover;background-repeat: no-repeat;box-shadow: 0 0 5px #ccc inset;">
+    </div>
+</div>
+
+
+			
+<article id="post-13" class="post-13 page type-page status-publish hentry entry">
+		<header class="entry-header">
+		
+
+	</header>
+	
+	<div class="entry-content">
+		<div class="clouds">
+    <div class="cloud x1"></div>
+    <!-- Time for multiple clouds to dance around -->
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+  </div>
+
+  <form class="register" id="register-form">
+    <div id="first-step">
+      <h2 class="title">验证手机</h2>
+      <p>
+        <span class="fa fa-mobile"></span>
+        <input id="phone" type="text" name="phone" placeholder="用户手机" required />
+      </p>
+      <p>
+        <span class="fa fa-check-square-o"></span>
+        <input id="vcode" type="text" name="vcode" autocomplete="off" placeholder="验证码" required />
+      </p>
+      <p class="vcode">
+        <img id="img-vcode" src="" alt="验证码">
+        <a href="javascript:;" class="btn btn-link" id="change-vcocde"><small>换一张</small></a>
+      </p>
+      <p class="text-center">
+        <a href="javascript:;" id="btn-getsmscode" class="btn btn-primary btn-block">确定</a>
+      </p>
+    </div>
+
+
+    <div id="smscode-box" class="d-none">
+      <p>
+        <small>验证码已经发送到您的手机<strong id="user-phone" class="text-danger">15973102713</strong>上，请在下框中输入您收到验证码。</small>
+      </p>
+      <p>
+        <span class="fa fa-envelope-open-o"></span>
+        <input id="smscode" type="text" name="smscode" autocomplete="off" placeholder="手机验证码" required />
+      </p>
+      <p class="text-danger text-center getsmscode" id=getsmscode></p>
+      <p>
+        <button type="button" id="do-register" class="btn btn-primary btn-block">完成</button>
+      </p>
+      <p class="text-center">
+        <a href="retrievepwdfirst.html"><small>忘记密码？</small></a>
+        <small>已有账号? </small>
+        <a href="login.html"><small>现在登录</small></a>
+      </p>
+    </div>
+
+  </form>	</div><!-- .entry-content -->
+
+</article><!-- #post-13 -->
+<include file="public/footer1" /> </body>
+    </html>
+    

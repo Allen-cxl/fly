@@ -1,0 +1,28 @@
+
+            <ul>
+			<foreach name="list" item="vo">
+                <li>
+                    <a href="/home/index/news/id/{$vo.id}">
+                        <span class="y_fl">{$vo.title}</span>
+                        <span class="y_fr">{:date("Y-m-d",$vo["time"])}</span>
+                    </a>
+                </li>
+			</foreach>	
+            </ul>
+            <br>
+            <span class="y_page" style="font-size:12px;">
+				<neq name="page.tou" value="0">
+					 <a href="javascript:tosub({$page.tou})">上一页</a>
+				</neq>
+				<foreach name="page.num" item="vo">
+					<eq name="vo" value="$page['now']">
+					<span class="y_page_on"><font color="#1F81EF">{$vo}</font></span>
+					<else/>
+					 <a href="javascript:tosub({$vo})">{$vo}</a>
+					</eq>
+				</foreach>
+				<neq name="page.wei" value="0">
+					 <a href="javascript:tosub({$page.wei})">下一页</a>
+				</neq>
+            </span>
+       

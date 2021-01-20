@@ -1,0 +1,86 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<script type="text/javascript" src="/Public/Home/DatePicker/WdatePicker.js"></script>
+	<div class="main-title">
+		<h2>航空货运</h2>
+	</div>
+	<div class="cf">
+	<div class="fl">
+            <a class="btn" href="{:U("fly/gedite")}">新 增</a>
+        </div>
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			
+		</div>
+    </div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>代码</th>
+					<th>航空公司</th>
+				
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.num}</td>
+						<td>{$vo.code}</td>
+						<td>{$vo.company}</td>
+						
+						<td>
+							<a  title="编辑" href="{:U('fly/gedite','id='.$vo["id"])}">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="{:U('fly/gdel','id='.$vo["id"])}">删除</a>
+						</td>
+					</tr>
+					
+					</tr>
+				</volist>
+				
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+        {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+	<script type="text/javascript">
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('fly/goodslist')}');
+		})
+	</script>
+</block>

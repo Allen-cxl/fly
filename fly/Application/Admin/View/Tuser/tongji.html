@@ -1,0 +1,57 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>统计列表</h2>
+	</div>
+<style type="text/css">
+.gejian span{
+padding-left:10px;
+}
+</style>
+
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>类型</th>
+					<th>IP</th>
+					<th>日期</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>		
+						<td>{$arr[$vo["state"]]}</td>
+						<td>{$vo.ip}</td>
+						<td>{$vo.day}</td>
+						
+					</tr>
+				</volist>
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+           {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('tuser/clists')}');
+		})
+	</script>
+</block>

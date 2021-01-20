@@ -1,0 +1,1209 @@
+[ 2021-01-20T00:47:37+08:00 ] 203.208.60.46 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='203.208.60.46' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','203.208.60.46','2021-01-20') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2021-01-20T01:23:09+08:00 ] 169.47.43.210 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0034s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='169.47.43.210' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','169.47.43.210','2021-01-20') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2021-01-20T01:27:15+08:00 ] 203.208.60.82 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='203.208.60.82' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','203.208.60.82','2021-01-20') [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2021-01-20T01:51:46+08:00 ] 66.249.79.180 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='66.249.79.180' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','66.249.79.180','2021-01-20') [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2021-01-20T02:37:16+08:00 ] 203.208.60.34 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0034s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='203.208.60.34' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','203.208.60.34','2021-01-20') [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2021-01-20T02:47:07+08:00 ] 203.208.60.121 /home/index/news/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001556s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='203.208.60.121' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','203.208.60.121','2021-01-20') [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lovevi_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_news` WHERE ( top=1 ) ORDER BY time desc LIMIT 0,3   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_news` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_news` WHERE ( id<17 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_news` WHERE ( id>17 ) ORDER BY id asc LIMIT 1   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2021-01-20T03:37:15+08:00 ] 66.249.68.49 /home/index/getnews1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='66.249.68.49' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','66.249.68.49','2021-01-20') [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_news` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_news` WHERE ( top=0 ) LIMIT 0,5   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2021-01-20T06:18:16+08:00 ] 203.208.60.58 /home/index/index/y/goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='203.208.60.58' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','203.208.60.58','2021-01-20') [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2021-01-20T09:33:00+08:00 ] 101.224.225.13 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','101.224.225.13','2021-01-20') [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2021-01-20T09:33:00+08:00 ] 101.224.225.13 /home/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_banner` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_banner`  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2021-01-20T09:42:41+08:00 ] 101.224.225.13 /home/index/cportTips?searchTxt=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0038s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( city like '上海' or city like '北京' or city like '广州' or city like '深圳' or city like '南京' ) LIMIT 100   [ RunTime:0.0035s ]
+
+[ 2021-01-20T09:42:44+08:00 ] 101.224.225.13 /home/index/cportTips?searchTxt=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( city like '上海' or city like '北京' or city like '广州' or city like '深圳' or city like '南京' ) LIMIT 100   [ RunTime:0.0026s ]
+
+[ 2021-01-20T09:42:51+08:00 ] 101.224.225.13 /home/index/hotTips?searchTxt=MENG
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000989s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( threecode like '%MENG%' or airport like '%MENG%' or city like '%MENG%' ) LIMIT 10   [ RunTime:0.0033s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php 第 83 行.
+NOTIC: [8] Undefined variable: arr /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php 第 88 行.
+
+[ 2021-01-20T09:42:53+08:00 ] 101.224.225.13 /home/index/hotTips?searchTxt=%E5%AD%9F%E4%B9%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( threecode like '%孟买%' or airport like '%孟买%' or city like '%孟买%' ) LIMIT 10   [ RunTime:0.0034s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php 第 83 行.
+NOTIC: [8] Undefined variable: arr /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php 第 88 行.
+
+[ 2021-01-20T09:42:54+08:00 ] 101.224.225.13 /home/index/tj?y=1&cp=PVG&mp=%E5%AD%9F%E4%B9%B0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_goodstype` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2021-01-20T09:42:55+08:00 ] 101.224.225.13 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0032s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `cportcode` = 'PVG' AND ( mport='孟买' or mportcode='孟买' ) AND `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `cportcode` = 'PVG' AND ( mport='孟买' or mportcode='孟买' ) AND `isdel` = 0 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2021-01-20T09:43:11+08:00 ] 101.224.225.13 /home/index/xq/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000986s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0029s ]
+NOTIC: [2] Missing argument 1 for day_report(), called in /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php on line 235 and defined /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 108 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 112 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 114 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [2] Missing argument 1 for monthhtml(), called in /data/home/byu7397920001/htdocs/Runtime/Cache/Home/32adef0012bcf1f19f16df78be5a27b6.php on line 356 and defined /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 175 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 177 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 180 行.
+NOTIC: [8] Array to string conversion /data/home/byu7397920001/htdocs/Runtime/Cache/Home/32adef0012bcf1f19f16df78be5a27b6.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2021-01-20T09:43:11+08:00 ] 101.224.225.13 /home/index/getmonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2021-01-20T09:43:48+08:00 ] 101.224.225.13 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='101.224.225.13' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `cportcode` = 'PVG' AND ( mport='孟买' or mportcode='孟买' ) AND `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `cportcode` = 'PVG' AND ( mport='孟买' or mportcode='孟买' ) AND `isdel` = 0 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2021-01-20T09:53:36+08:00 ] 180.169.174.154 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: INSERT INTO `lovevi_tongji` (`state`,`ip`,`day`) VALUES ('1','180.169.174.154','2021-01-20') [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2021-01-20T09:53:37+08:00 ] 180.169.174.154 /home/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_banner` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_banner`  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2021-01-20T09:53:38+08:00 ] 180.169.174.154 /home/index/index/y/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2021-01-20T09:53:39+08:00 ] 180.169.174.154 /home/index/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0036s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_goodstype` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2021-01-20T09:53:39+08:00 ] 180.169.174.154 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Home/264316171191dc5f38af19c4ebb0146f.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2021-01-20T09:53:50+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001545s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2021-01-20T09:57:44+08:00 ] 180.169.174.154 /home/index/index/y/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2021-01-20T09:57:44+08:00 ] 180.169.174.154 /home/index/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lovevi_goodstype` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2021-01-20T09:57:45+08:00 ] 180.169.174.154 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000980s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Home/264316171191dc5f38af19c4ebb0146f.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2021-01-20T09:57:46+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2021-01-20T10:00:47+08:00 ] 180.169.174.154 /home/index/index/y/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2021-01-20T10:00:47+08:00 ] 180.169.174.154 /home/index/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_goodstype` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2021-01-20T10:00:48+08:00 ] 180.169.174.154 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Home/264316171191dc5f38af19c4ebb0146f.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2021-01-20T10:00:50+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2021-01-20T10:00:55+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0041s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2021-01-20T10:01:12+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2021-01-20T10:27:39+08:00 ] 180.169.174.154 /home/index/index/y/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001451s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2021-01-20T10:27:40+08:00 ] 180.169.174.154 /home/index/tj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0036s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_goodstype` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2021-01-20T10:27:40+08:00 ] 180.169.174.154 /home/index/gettj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0039s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Home/264316171191dc5f38af19c4ebb0146f.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2021-01-20T10:27:41+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2021-01-20T10:27:44+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0041s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2021-01-20T10:27:53+08:00 ] 180.169.174.154 /home/index/getport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0139s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lovevi_ports` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_ports` WHERE ( isdel=0 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 52 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: ls2 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2021-01-20T10:31:57+08:00 ] 180.169.174.154 /home/index/xq/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0036s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0029s ]
+NOTIC: [2] Missing argument 1 for day_report(), called in /data/home/byu7397920001/htdocs/Application/Home/Controller/IndexController.class.php on line 235 and defined /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 108 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 112 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 114 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [2] Missing argument 1 for monthhtml(), called in /data/home/byu7397920001/htdocs/Runtime/Cache/Home/32adef0012bcf1f19f16df78be5a27b6.php on line 356 and defined /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 175 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 177 行.
+NOTIC: [8] Undefined variable: nn /data/home/byu7397920001/htdocs/Application/Home/Common/function.php 第 180 行.
+NOTIC: [8] Array to string conversion /data/home/byu7397920001/htdocs/Runtime/Cache/Home/32adef0012bcf1f19f16df78be5a27b6.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2021-01-20T10:31:58+08:00 ] 180.169.174.154 /home/index/getmonth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001398s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_config` [ RunTime:0.0034s ]
+SQL: SELECT `type`,`name`,`value` FROM `lovevi_config` WHERE `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_tongji` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_tongji` WHERE ( state=1 and ip='180.169.174.154' and day='2021-01-20' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0031s ]
+

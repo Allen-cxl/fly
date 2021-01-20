@@ -1,0 +1,123 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>会员列表</h2>
+	</div>
+	<!--<div class="cf">
+		<?php if (IS_ROOT): ?>
+			<a class="btn" href="{:U('addhook')}">新 增</a>
+		<?php endif ?>
+	</div>
+-->
+<div class="search-form fr cf">
+			<div class="sleft">
+			<input  type="hidden" name="t" value="{$t}" />
+			<input style="float:left;    padding: 2px 4px;margin:0 5px 0 0;" name="uid" value="{:I("get.uid")}" placeholder="用户ID" />
+			
+				<a class="sch-btn" href="javascript:;" id="search" url="{:U('lists')}"><i class="btn-search"></i></a>
+			</div>
+		</div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					
+					<th>邮箱</th>
+					<th>名称</th>
+					<th>电话</th>
+					<th>注册时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						
+						<td>{$vo.user}</td>
+						<td>{$vo.name}</td>
+						<td>{$vo.tel}</td>
+
+						<td>{:date("Y-m-d",$vo["time"])}</td>
+				
+					
+						<td>
+
+							<a title="上下分" href="javascript:changepwd({$vo.id})">修改密码</a>　
+							<a class="confirm ajax-get" title="删除" href="{:U('tuser/del','id='.$vo["id"])}">删除</a>
+						</td>
+					</tr>
+				</volist>
+			</tbody>
+		</table>        
+	</div>
+
+	<!-- 分页 -->
+    <div class="page">
+        {$page}
+    </div>
+<div id="zhez" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(175,175,175,0.5);"></div>
+<div id="tanc" style="display:none;padding:10px 20px;position:fixed;top:50%;left:50%;margin-left:-200px;margin-top:-100px;width:400px;height:160px;background-color:white;border-radius:3px;">
+
+<input id="gid" type="hidden">
+<input id="num" placeholder="请输入密码" style="width:370px;padding:8px 10px;margin-bottom:20px;margin-top:40px;">
+<button id="submit" style="width:185px;padding:10px;border:0px;margin-right:20px;border-radius:2px;background-color:#1f407d;color:white;">确定</button>
+<button id="del" style="width:185px;padding:10px;border:0px;background-color:gray;color:white;border-radius:2px;">取消</button>
+</div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+	$("#del").click(function(){
+		$("#zhez").hide();
+		$("#tanc").hide();
+	});
+		function changepwd(id){
+			$("#gid").val(id);
+			$("#zhez").show();
+			$("#tanc").show();
+		}
+$("#submit").click(function(){
+	var id=$("#gid").val();
+	var pwd=$("#num").val();
+	if(pwd==""){
+		alert("密码不能为空");
+	}else{
+		$.post("{:U("tuser/changepwd")}",{id:id,pwd:pwd},function(result){
+			if(result=="ok"){
+				window.location.reload();
+			}
+		});
+	}
+});
+	</script>
+	<script type="text/javascript">
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('money/lists')}');
+		})
+	</script>
+</block>

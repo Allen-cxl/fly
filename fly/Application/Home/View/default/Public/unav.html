@@ -1,0 +1,43 @@
+<nav class="nav-sidebar" id="sidebar">
+  <ul>
+    <li class="<eq name="unav" value="1">active</eq>">
+      <a href="#homeSubmenu" class="fa" data-toggle="collapse"
+        aria-expanded="<eq name="unav" value="1">true<else/>false</eq>">
+        <i class="fa fa-home"></i>我的订舱网
+      </a>
+      <ul class="<eq name="unav" value="1"><else/>collapse</eq>" id="homeSubmenu" data-parent="#sidebar">
+        <li class="<eq name="unav" value="1">active</eq>"><a href="/home/user/center">订单列表</a>
+        </li>
+      </ul>
+    </li>
+	<!--
+    <li class="<eq name="unav" value="2">active</eq>">
+      <a href="#DcSubmenu" class="fa" data-toggle="collapse"
+        aria-expanded="<eq name="unav" value="2">true<else/>false</eq>">
+        <i class="fa fa-user"></i>我的订舱中心
+      </a>
+      <ul class="<eq name="unav" value="2"><else/>collapse</eq> " id="DcSubmenu" data-parent="#sidebar">
+        <li class="<eq name="unav" value="2">active</eq>"><a href="/home/user/dhrecord">订单列表</a>
+        </li>
+
+      </ul>
+    </li>
+-->
+    <li class="<eq name="unav" value="3">active</eq>">
+      <a href="#ZhszSubmenu" class="fa" data-toggle="collapse"
+        aria-expanded="<eq name="unav" value="3">true<else/>false</eq>">
+        <i class="fa fa-gear"></i>账户设置
+      </a>
+      <ul class="<eq name="unav" value="3"><else/>collapse</eq>" id="ZhszSubmenu" data-parent="#sidebar">
+        <li class="<eq name="unav" value="3">active</eq>"><a href="/home/user/changepwd.html">修改密码</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="/home/user/logout" id="btn-logout">
+        <i class="fa fa-envelope"></i>注销
+      </a>
+    </li>
+  </ul>
+</nav>

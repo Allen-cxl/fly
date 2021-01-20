@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=980,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>北京赛车PK10</title>
+<link href="/Public/Home/css/re.css" rel="stylesheet" type="text/css">
+<link href="/Public/Home/css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/Public/Home/js/jquery.js"></script>
+<script type="text/javascript" src="/Public/Home/js/layer.js"></script>
+<script type="text/javascript" src="/Public/Home/js/func.js"></script>
+<script type="text/javascript" src="/Public/Home/js/bet.js"></script>
+<script>
+var $t,$t2,$chat_id=0;
+var $hb;
+var $pic='guest',$name='guest';
+var $qi,$endtime=0,$time='';
+</script>
+<script type="text/javascript">
+function browserRedirect() { 
+var sUserAgent= navigator.userAgent.toLowerCase(); 
+var bIsIpad= sUserAgent.match(/ipad/i) == "ipad"; 
+var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os"; 
+var bIsMidp= sUserAgent.match(/midp/i) == "midp"; 
+var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4"; 
+var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb"; 
+var bIsAndroid= sUserAgent.match(/android/i) == "android"; 
+var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce"; 
+var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile"; 
+ 
+if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
+//window.location.href= 'http://wap.'; 
+} else { 
+//window.location.href= '/errmsg.php'; 
+} 
+} 
+browserRedirect(); 
+</script>
+</head>
+
+<body>
+<div class="index">
+	<div class="vodbox" id="vodbox"><iframe id="player1" width="980" height="640" border="0" marginwidth="0" marginheight="0" scrolling="no" src="{:U("index/mob")}"></iframe></div>
+    <div class="chatbox">
+    	<div class="uinfo">
+                    <span class="u_unlogin">
+            	<a class="u_btn_login" href="/?m=login">立即登录</a><a class="u_btn_reg" href="/?m=reg">用户注册</a><a id="btn_px" class="u_btn_px" href="javascript:;">免费试玩</a><a class="u_btn_reg" href="" target="_blank">在线客服</a>
+            </span>
+                        <div class="u_right">
+            	<a href="javascript:;" class="hidvod" id="hidvod">↑ 隐藏开奖视频</a>
+                <span class="u_oline">当前在线：<span id="oline">0</span></span>
+            </div>
+        </div>
+        <div class="uchar" id="uchar">
+        	<ul></ul>
+        </div>
+        <div class="char_footer">
+        	<span class="ico send_menu">&#xe6d4;</span>
+            <input type="text" name="msg" class="sendipt" placeholder="请输入投注内容" id="sendipt" value="">
+            <button class="sendbtn" id="sendbtn">发送</button>
+            <ul class="char_demo">
+            	<li demo="lm">两面 投注示范</li>
+                <li demo="pm">排名1-10 投注示范</li>
+                <li demo="gyh">冠亞軍和 投注示范</li>
+                <li demo="lh">龙虎 投注示范</li>
+                <li class="bt" demo="zhxz">组合下注示范</li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    <a href="/?m=rule" ><span class="ico">&#xe68b;</span><br>规则</a>
+    <a href="/?m=list" ><span class="ico">&#xe6d8;</span><br>下注记录</a>
+    <a href="/?m=bet" class="m_go m_goon"><span class="ico">&#xe614;</span><br>竞猜</a>
+    <a href="/?m=his" ><span class="ico">&#xe6ba;</span><br>历史开奖</a>
+    <a href="/?m=info" ><span class="ico">&#xe69f;</span><br>个人信息</a>
+</div>
+<script>
+$(function(){
+	$(".title-bk").click(function(){history.go(-1);})
+});
+</script></div>
+</body>
+</html>

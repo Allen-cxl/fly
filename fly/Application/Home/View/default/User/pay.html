@@ -1,0 +1,391 @@
+
+<!doctype html>
+<html lang="zh-CN" data-dpr="1" style="font-size: 160px;">
+    
+    <head>
+        <style class="vjs-styles-defaults">.video-js { width: 300px; height: 150px; } .vjs-fluid { padding-top: 56.25% }</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="favicon.ico">
+        <title></title>
+		<link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="/Public/Home/static/css/chunk-vendors.e22b6a05.css" rel="stylesheet">
+        <link href="/Public/Home/static/css/app.62f28f31.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/Public/Home/static/css/chunk-4b21e6ba.69bb1c14.css">
+		 <script type='text/javascript' src='/Public/Admin/uploade/jquery-2.0.3.min.js'></script>
+		 <script type="text/javascript" src="/Public/Home/DatePicker/WdatePicker.js"></script>
+    </head>
+    
+    <body style="font-size: 12px; padding-right: 17px;">
+
+        <div id="app " >
+            <div>
+                <div id="freight_query_add_order" >
+                    <div class="add_order_box w">
+                     
+                        <div class="add_order_info_box" style="padding-top:10px;">
+                            <div class="ivu-row">
+                                <div class="ivu-col">
+                                    <div class="ivu-card ivu-card-bordered">
+                                        <!---->
+                                        <!---->
+                                        <div class="ivu-card-body">
+                                            <div class="alert_text ivu-row">
+                                                <div class="ivu-alert ivu-alert-warning ivu-alert-with-icon ivu-alert-with-desc">
+                                                    <span class="ivu-alert-icon">
+                                                        <i class="ivu-icon ivu-icon-ios-alert-outline"></i>
+                                                    </span>
+                                                    <span class="ivu-alert-message">请准确填写收发货信息</span>
+                                                    <span class="ivu-alert-desc">收发货人务必与提单一致，必须准确填写，如若错误则无法正常清关，后果自负！
+                                                        <div>
+                                                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2591387078&site=qq&menu=yes" style="font-size: 14px;">
+                                                                <i class="ivu-icon ss-icon ss-icon-qq" style="color: rgb(45, 140, 240);"></i>联系客服</a></div>
+                                                    </span>
+                                                    <!----></div>
+                                            </div>
+                                            <div class="alert_title_box ivu-row">
+                                                <div class="ivu-alert ivu-alert-info ivu-alert-with-icon">
+                                                    <span class="ivu-alert-icon">
+                                                        <i class="ivu-icon ivu-icon-ios-information-circle"></i>
+                                                    </span>
+                                                    <span class="ivu-alert-message">
+                                                        <span class="select-count">航班信息</span></span>
+                                                    <span class="ivu-alert-desc"></span>
+                                                    <!----></div>
+                                            </div>
+                                            <form autocomplete="off" class="ivu-form ivu-form-label-right">
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px; left: 20px;">
+                                                    <div class="ivu-col ivu-col-span-12" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">进仓/订舱编码</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type" style="width: 200px;">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="" class="ivu-input ivu-input-default">
+                                                                    <!----></div>
+                                                                <span style="color: red;">&nbsp;&nbsp;&nbsp;*留空自动生成；自定义编码不可重复</span>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px; left: 20px;">
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">航空公司</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-select ivu-select-disabled ivu-select-single ivu-select-default">
+                                                                    <div tabindex="-1" class="ivu-select-selection">
+                                                                        <input type="hidden" value="EK">
+                                                                        <div class="">
+                                                                            <!---->
+                                                                            <!---->
+                                                                            <span class="ivu-select-selected-value">{$data.companycode}</span>
+                                                                            <!---->
+                                                                            <!---->
+                                                                            <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item ivu-form-item-required">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">航班日期</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-date-picker">
+                                                                    <div class="ivu-date-picker-rel">
+                                                                        <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type ivu-date-picker-editor">
+                                                                            <!---->
+                                                                            <span class="ivu-input-suffix">
+                                                                                <i class="ivu-icon ivu-icon-ios-calendar-outline"></i>
+                                                                            </span>
+                                                                            <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                            <input  type="text" placeholder="请选择" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="ivu-input ivu-input-default ivu-input-with-suffix">
+                                                                            <!----></div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px; left: 20px;">
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">始发港</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <!---->
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type" style="width: 200px;">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input value="{$data.cport}" autocomplete="off" spellcheck="false" type="text" placeholder="" readonly="readonly" class="ivu-input ivu-input-default ivu-input-disabled" disabled="disabled">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">目的港</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <!---->
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type" style="width: 200px;">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input value="{$data.mport}" autocomplete="off" spellcheck="false" type="text" placeholder="" readonly="readonly" class="ivu-input ivu-input-default ivu-input-disabled" disabled="disabled">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!----></div>
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px;">
+                                                    <div class="ivu-alert ivu-alert-warning ivu-alert-with-icon">
+                                                        <span class="ivu-alert-icon">
+                                                            <i class="ivu-icon ivu-icon-ios-alert"></i>
+                                                        </span>
+                                                        <span class="ivu-alert-message">当前计费信息：&nbsp;&nbsp;&nbsp; 计费件数：,&nbsp;&nbsp;&nbsp;计费重量：,&nbsp;&nbsp;&nbsp; 计费体积：</span>
+                                                        <span class="ivu-alert-desc"></span>
+                                                        <!----></div>
+                                                </div>
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px; left: 20px;">
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item ivu-form-item-required">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">预估件数(件)</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="请输入件数" class="ivu-input ivu-input-default">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item ivu-form-item-required">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">预估重量(KG)</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="请输入预估重量" maxlength="10" class="ivu-input ivu-input-default">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item ivu-form-item-required">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">预估体积(CBM)</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="请输入预估体积" maxlength="10" class="ivu-input ivu-input-default">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="ivu-row" style="margin-left: -16px; margin-right: -16px; left: 20px;">
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">货物属性</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <span style="color: red;">{$gy[$data["goodstype"]]}</span>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-col ivu-col-span-7" style="padding-left: 16px; padding-right: 16px;">
+                                                        <div class="ivu-form-item ivu-form-item-required">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">货物总称</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                                                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="请填写英文名称" class="ivu-input ivu-input-default">
+                                                                    <!----></div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <!----></div>
+                                                <div class="ivu-row">
+                                                    <div class="ivu-col ivu-col-span-11">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">备注</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <textarea wrap="soft" autocomplete="off" spellcheck="false" placeholder="" rows="6" class="ivu-input"></textarea>
+                                                                </div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ivu-col ivu-col-span-11">
+                                                        <div class="ivu-form-item">
+                                                            <label class="ivu-form-item-label" style="width: 120px;">唛头</label>
+                                                            <div class="ivu-form-item-content" style="margin-left: 120px;">
+                                                                <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type">
+                                                                    <textarea wrap="soft" autocomplete="off" spellcheck="false" placeholder="" rows="6" class="ivu-input"></textarea>
+                                                                </div>
+                                                                <!----></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+												<!--
+                                                <button type="button" class="ivu-btn ivu-btn-error ivu-btn-long ivu-btn-circle">
+                                              
+                                                    <i class="ivu-icon ivu-icon-md-add"></i>
+                                                    <span>
+                                                        <span style="color: rgb(255, 255, 255);">填写更多（非必填）</span></span>
+                                                </button>
+                                                <br>
+                                                
+                                                <br>
+                                                <div class="ivu-row">
+                                                    <div class="ivu-col ivu-col-span-5">
+                                                        <div class="ivu-upload">
+                                                            <div class="ivu-upload ivu-upload-select">
+                                                                <input type="file" multiple="multiple" class="ivu-upload-input">
+                                                                <button type="button" class="ivu-btn ivu-btn-default">
+                                                                   
+                                                                    <i class="ivu-icon ivu-icon-ios-cloud-upload-outline"></i>
+                                                                    <span>上传托书</span></button>
+                                                            </div>
+                                                            <ul class="ivu-upload-list"></ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												
+                                                <div class="ivu-row">
+                                                    <div class="attachment_table">
+                                                        <div class="ivu-table-wrapper">
+                                                            <div class="ivu-table ivu-table-default ivu-table-border">
+                                                                
+                                                                <div class="ivu-table-header">
+                                                                    <table cellspacing="0" cellpadding="0" border="0" style="width: 1565px;">
+                                                                        <colgroup>
+                                                                            <col width="391">
+                                                                                <col width="391">
+                                                                                    <col width="391">
+                                                                                        <col width="391">
+                                                                                            </colgroup>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="ivu-table-column-center">
+                                                                                    <div class="ivu-table-cell">
+                                                                                        <span class="">文件名</span>
+                                                                                        
+                                                                                        </div>
+                                                                                </th>
+                                                                                <th class="ivu-table-column-center">
+                                                                                    <div class="ivu-table-cell">
+                                                                                        <span class="">文件大小</span>
+                                                                                        
+                                                                                        </div>
+                                                                                </th>
+                                                                                <th class="ivu-table-column-center">
+                                                                                    <div class="ivu-table-cell">
+                                                                                        <span class="ivu-table-cell-sort">上传时间</span>
+                                                                                        <span class="ivu-table-sort">
+                                                                                            <i class="ivu-icon ivu-icon-md-arrow-dropup"></i>
+                                                                                            <i class="ivu-icon ivu-icon-md-arrow-dropdown"></i>
+                                                                                        </span>
+                                                                                        </div>
+                                                                                </th>
+                                                                                <th class="ivu-table-column-center">
+                                                                                    <div class="ivu-table-cell">
+                                                                                        <span class="">文件类型</span>
+                                                                                        
+                                                                                        </div>
+                                                                                </th>
+                                                                                </tr>
+                                                                        </thead>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="ivu-table-body" style="display: none;">
+                                                                    <table cellspacing="0" cellpadding="0" border="0" style="width: 1565px;">
+                                                                        <colgroup>
+                                                                            <col width="391">
+                                                                                <col width="391">
+                                                                                    <col width="391">
+                                                                                        <col width="391"></colgroup>
+                                                                        <tbody class="ivu-table-tbody"></tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="ivu-table-tip">
+                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="width: 1565px;">
+                                                                                    <span>暂无数据</span></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                                </div>
+                                                            
+                                                            <object tabindex="-1" type="text/html" data="about:blank" style="display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none; padding: 0px; margin: 0px; opacity: 0; z-index: -1000; pointer-events: none;"></object>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                                            </form>
+                                            <br>
+                                            <div class="submit_order_box">
+                                                <div class="submit_order_btn">
+                                                    <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-long ivu-btn-circle ivu-btn-large ivu-btn-ghost">
+                                                        
+                                                        
+                                                        <span>取消</span></button>
+                                                </div>
+                                                <div class="submit_order_btn">
+                                                    <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-long ivu-btn-circle ivu-btn-large">
+                                                        
+                                                        
+                                                        <span>
+                                                            <span style="color: rgb(255, 255, 255);">保存订单</span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="submit_order_btn">
+                                                    <button type="button" class="ivu-btn ivu-btn-error ivu-btn-long ivu-btn-circle ivu-btn-large">
+                                                        
+                                                        
+                                                        <span>
+                                                            <span style="color: rgb(255, 255, 255);">保存并提交订单</span></span>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----></div>
+                </div>
+            </div>
+
+
+        </div>
+<script>
+window.parent.initIframeHeight($(document.body).height());
+</script>
+</html>

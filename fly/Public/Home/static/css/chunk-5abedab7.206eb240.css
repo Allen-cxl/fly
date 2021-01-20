@@ -1,0 +1,1140 @@
+@-webkit-keyframes vueCityPicker-data-v-ce100f26 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0) scale(1);
+        transform: translate(0) scale(1)
+    }
+}
+
+@keyframes vueCityPicker-data-v-ce100f26 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0) scale(1);
+        transform: translate(0) scale(1)
+    }
+}
+
+.vue-city-picker[data-v-ce100f26] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font:14px Microsoft YaHei, tahoma, arial, Hiragino Sans GB, "\\5b8b\4F53", sans-serif;
+    color: #555
+}
+
+.vue-city-picker [data-v-ce100f26] {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.vue-city-picker li[data-v-ce100f26] {
+    list-style-type: none
+}
+
+.vue-city-picker .vcp-panel[data-v-ce100f26] {
+    position: absolute;
+    z-index: 99999;
+    padding: .08333333rem .06944444rem 0;
+    width: 3.47222222rem;
+    border:1px solid #ddd;
+    -webkit-box-shadow: 0 .01388889rem .03472222rem 0 rgba(0, 0, 0, .18);
+    box-shadow: 0 .01388889rem .03472222rem 0 rgba(0, 0, 0, .18);
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-animation: vueCityPicker-data-v-ce100f26 .1s ease-out;
+    animation: vueCityPicker-data-v-ce100f26 .1s ease-out
+}
+
+.vue-city-picker .vcp-panel h5[data-v-ce100f26] {
+    margin-bottom: .03472222rem;
+    padding-left: .01388889rem;
+    color: #aaa;
+    line-height: 1.5;
+    font-weight: 400
+}
+
+.vue-city-picker .vcp-panel .vcp-tags[data-v-ce100f26] {
+    overflow: hidden;
+    margin: .03472222rem 0
+}
+
+.vue-city-picker .vcp-panel .vcp-tags li[data-v-ce100f26] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: .41666667rem;
+    height:28px;
+    line-height:28px;
+    color:#333;
+    display: block;
+    float: left;
+    background-color: #f2f2f3;
+    text-align: center;
+    border-left: .00694444rem solid #fff;
+    cursor: pointer
+}
+
+.vue-city-picker .vcp-panel .vcp-tags li[data-v-ce100f26]:first-child {
+    border-left: none
+}
+
+.vue-city-picker .vcp-panel .vcp-tags li[data-v-ce100f26]:hover {
+    color: rgb(31 64 125)
+}
+
+.vue-city-picker .vcp-panel .vcp-tags li.z-on[data-v-ce100f26] {
+    height:28px;
+    line-height:28px;
+    background-color:#1f407d;
+    color: #fff
+}
+
+.vue-city-picker .vcp-panel .vcp-list[data-v-ce100f26] {
+    overflow: hidden;
+    border-bottom: .06944444rem solid #fff
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div[data-v-ce100f26] {
+    margin: .00694444rem 0 -.00694444rem;
+    padding: .03472222rem 0;
+    line-height: .16666667rem;
+    border-bottom: .00694444rem dashed #eee;
+    overflow: hidden
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div h6[data-v-ce100f26] {
+    float: left;
+    font-weight: 400;
+    color: rgb(31 64 125);
+    font-size:14px;
+    width: .90277778rem;
+    padding-left: .03472222rem
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div ul[data-v-ce100f26] {
+    overflow: hidden
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div ul li[data-v-ce100f26] {
+    color:#555;
+    float: left;
+    width: .41666667rem;
+    padding-left: .02777778rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div ul li[data-v-ce100f26]:hover {
+    background-color: #f2f2f3;
+    color: rgb(31 64 125)
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div.z-hot[data-v-ce100f26] {
+    padding-left: .06944444rem
+}
+
+.vue-city-picker .vcp-panel .vcp-list>div.z-hot ul li[data-v-ce100f26] {
+    padding-left: .04166667rem
+}
+
+.allcover {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.center {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.center,
+.ct {
+    position: absolute;
+    top: 50%
+}
+
+.ct {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.cl {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.text_animation {
+    display: block;
+    font-weight: 700;
+    color: #ffb525;
+    animation: changeshadow 1s ease-in infinite;
+    -webkit-animation: changeshadow 1s linear infinite;
+    -moz-animation: changeshadow 1s linear infinite;
+    -ms-animation: changeshadow 1s linear infinite;
+    -o-animation: changeshadow 1s linear infinite
+}
+
+@keyframes changeshadow {
+    0% {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+
+    50% {
+        text-shadow: 0 0 .27777778rem #fff
+    }
+
+    to {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+}
+
+@-webkit-keyframes changeshadow {
+    0% {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+
+    50% {
+        text-shadow: 0 0 .27777778rem #fff
+    }
+
+    to {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+}
+
+#freight_query_index .freight_query_container .query_condition {
+    background-color: #fff
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 {
+    height: .41666667rem;
+    background-color:#666666
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container {
+    position: relative;
+    line-height: .41666667rem;
+    text-align: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container:before {
+    content: "";
+    position: absolute;
+    top: -.17361111rem;
+    left: 0;
+    width: 1.38888889rem;
+    height: .17361111rem;
+    background-color: #272727;
+    border-top-right-radius: .16666667rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container .ivu-row .ivu-col-span-4 {
+    cursor: pointer
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container .ivu-row .ivu-col-span-4 .box1_container_content {
+    height: .41666667rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container .ivu-row .ivu-col-span-4 .box1_container_content .ivu-icon {
+    font-size: .27777778rem;
+    color: #fff;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container .ivu-row .ivu-col-span-4 .box1_container_content span {
+    padding-left: .03472222rem;
+    font-size:16px;
+    color: #ffffff;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box1 .box1_container .ivu-row .ivu-col-span-4 .selected_bgc {
+    background-color: #1f407d
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 {
+    margin: .20833333rem auto;
+    height: .225rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .destination_port,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .port_of_departure {
+    width: 1.73611111rem;
+    height:.225rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #cecece;
+    border-radius:2px;
+    background-color: #ffffff
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .destination_port .departure_text,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .port_of_departure .departure_text {
+    padding-left:.03472222rem;
+    padding-right:.03472222rem
+    height:36px
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .destination_port .departure_text span,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .port_of_departure .departure_text span {
+    display: block;
+    padding: 0 .06944444rem;
+    font-size:14px;
+    color: #333;
+    font-weight:400;
+    border-right:1px solid #cecece
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .destination_port input,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .destination_port select,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .port_of_departure input,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .port_of_departure select {
+    padding-left: .03472222rem;
+    color: #555;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+    width: 1.11111111rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date {
+    width: 1.04166667rem;
+    height: .27777778rem;
+    background-color: #fbfbfb;
+    border: .00694444rem solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker {
+    width: 100% !important;
+    height: .27777778rem !important;
+    line-height: .27777778rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel {
+    height: .27777778rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper {
+    width: 100%;
+    height: .27777778rem;
+    vertical-align: top
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper .ivu-input-suffix {
+    right: .20833333rem;
+    top: -.01388889rem;
+    line-height: .27777778rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper .ivu-input-suffix .ivu-icon-ios-calendar-outline {
+    font-size: .16666667rem;
+    color: #b8b8b8;
+    font-weight: 600
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper .ivu-input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper .ivu-input::-webkit-input-placeholder {
+    padding-left: .16666667rem;
+    color: #666;
+    font-size: .08333333rem;
+    font-weight: 600
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .select_date .ivu-date-picker .ivu-date-picker-rel .ivu-input-wrapper .ivu-input {
+    padding: 0 .22222222rem 0 .06944444rem;
+    height: .26388889rem;
+    color: #666;
+    background-color: #fbfbfb;
+    border: none;
+    outline: none
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .volume,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .weight {
+    width: 1.04166667rem;
+    height: .27777778rem;
+    background-color: #fbfbfb;
+    border: .00694444rem solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .volume input,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .weight input {
+    padding: 0 .03472222rem;
+    width: .61111111rem;
+    color: #666;
+    background-color: #fbfbfb;
+    outline: none
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .volume_text,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .weight_text {
+    padding: .06944444rem .03472222rem;
+    width: .44444444rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .volume_text span,
+#freight_query_index .freight_query_container .query_condition .condition_box2 .weight_text span {
+    display: block;
+    padding: 0 .06944444rem;
+    font-size: .08333333rem;
+    color: #666;
+    font-weight: 600;
+    border-right: .00972222rem solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .filter_search .ivu-btn {
+    padding: 0 0 0 18px;
+    width: 80px;
+    height:36px;
+    border-radius:3px;
+    line-height:36px;
+    outline: none;
+    background-color: #1f407d;
+    text-align: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box2 .filter_search .ivu-btn .ss-icon-sousuo1 {
+    float:left;
+    color: #fff;
+    margin-top:10px;
+    margin-right:4px
+
+}
+#freight_query_index .freight_query_container .query_condition .condition_box2 .filter_search .ivu-btn span {
+    display: block;
+    float:left;
+    width:19px;
+    font-size:14px;
+    color: #fff;
+    vertical-align: middle;
+    height: 36px;
+    line-height:36px
+    
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 {
+    border: 1px solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .ad_title,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .pt_title {
+    width: .83333333rem;
+    height: 46px;
+    line-height:46px;
+    text-align: center;
+    font-size: .09722222rem;
+    color: #fff;
+    background-color: #666
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up {
+    border-bottom: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: .34722222rem;
+    text-align: center;
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_title {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: .83333333rem;
+    font-size: .09722222rem;
+    color: #fff;
+    background-color: #666;
+    border-bottom: .00694444rem solid #eee
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_list {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_list .ac_item {
+    width: 22%;
+    margin-left:22px;
+    padding-left: .13888889rem;
+    padding-right:.13888889rem;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: left
+}
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_list .ac_item .ac_itemt{
+    display: block;
+    line-height:20px;
+    font-size:14px
+
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_list .ac_item span {
+    font-size: .09722222rem;
+    color: #555;
+    font-weight: 600
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .airline_company .ac_list .selected_ac_item {
+    padding-left: .13888889rem;
+    background-color: #f2f2f2;
+    border-radius:4px
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .ac_more {
+    margin-top:9px;
+    width: .69444444rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-align: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .ac_more .ivu-btn span {
+    padding: .02777778rem .02222rem;
+    font-weight: 700;
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .ac_more .ivu-btn:hover {
+    border-color: #dcdee2
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_up .ac_more .ivu-btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down {
+    height: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type {
+    height: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .ad_content,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .pt_content,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .ad_content,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .pt_content {
+    padding: 0 .13888889rem 0 .27777778rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .ad_content .ivu-checkbox-group .ivu-checkbox-group-item,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .pt_content .ivu-checkbox-group .ivu-checkbox-group-item,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .ad_content .ivu-checkbox-group .ivu-checkbox-group-item,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .pt_content .ivu-checkbox-group .ivu-checkbox-group-item {
+    margin-right: .3125rem;
+    font-size:16px;
+    color:#3333333;
+    font-weight: 400
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .ad_content .ivu-checkbox-group .ivu-checkbox-group-item .ivu-radio,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .arrive_days .pt_content .ivu-checkbox-group .ivu-checkbox-group-item .ivu-radio,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .ad_content .ivu-checkbox-group .ivu-checkbox-group-item .ivu-radio,
+#freight_query_index .freight_query_container .query_condition .condition_box3 .box3_down .packaging_type .pt_content .ivu-checkbox-group .ivu-checkbox-group-item .ivu-radio {
+    margin-right: .06944444rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 {
+    margin-top: .17361111rem;
+    padding: .13888889rem .06944444rem;
+    border-top: .00694444rem dashed #ddd
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4,
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left,
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_title {
+    font-size: .09722222rem;
+    margin-right: .22222222rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content {
+    font-size: .09722222rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item {
+    margin-right: .15277778rem;
+    cursor: pointer
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price {
+    margin-right: .02083333rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price_btns {
+    margin-top: .01388889rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price_btns .high_price,
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price_btns .low_price {
+    border: .04166667rem solid #abaaab;
+    border-left-color: transparent;
+    border-right-color: transparent
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price_btns .high_price {
+    margin-bottom: .00694444rem;
+    border-top-color: transparent
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_price .sort_price_btns .low_price {
+    margin-top: .00694444rem;
+    border-bottom-color: transparent
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_icon span {
+    margin-right: .03472222rem;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .sort_item_icon .ivu-icon {
+    font-size: .125rem;
+    color: #ababab;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .sort_box .sort_content .sort_list .selected_color {
+    color: #ff0027
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .aircraft_cabin {
+    margin-left: .55555556rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_left .aircraft_cabin label {
+    font-size: .09722222rem
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_right {
+    font-size: .08333333rem;
+    color: #000
+}
+
+#freight_query_index .freight_query_container .query_condition .condition_box4 .box4_right span {
+    padding: 0 .01388889rem;
+    font-size: .09722222rem;
+    color: #20407d;
+    font-weight: 600
+}
+
+#freight_query_index .freight_query_container .query_result {
+    background-color: #f2f2f2
+}
+
+#freight_query_index .freight_query_container .query_result .result_header {
+    height: .34722222rem;
+    color: #fff;
+    background-color: #fff
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row {
+    margin: auto;
+    height: 100%;
+    background-color: #666
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left {
+    width: 43%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left .header_left_departure .ivu-icon-md-radio-button-off {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left .header_left_departure span {
+    height: .34722222rem;
+    line-height: .34722222rem;#666;
+    padding-left: .05555556rem;
+    font-size:16px;
+    color: #fff;
+    font-weight:400;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left .ss-icon-youjiantou {
+    padding: 0 .08333333rem;
+    font-size: .16666667rem;
+    color: #fff
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left .header_left_destination .ss-icon-zhongdian1 {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_left .header_left_destination span {
+    height: .34722222rem;
+    line-height: .34722222rem;
+    padding-left: .05555556rem;
+    font-size:16px;
+    color: #fff;
+    font-weight:400;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_right {
+    padding: 0 .31944444rem 0 .22222222rem;
+    width: 57%;
+    height: 100%
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_right .kg_list {
+    margin-bottom: .17361111rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_header .result_header_row .result_header_right .kg_list .kg_item {
+    width: .59722222rem;
+    height: .34722222rem;
+    line-height: .34722222rem;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400
+}
+
+#freight_query_index .freight_query_container .query_result .result_content {
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_tag {
+    top: .10416667rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_tag,
+#freight_query_index .freight_query_container .query_result .result_content .result_content_tag2 {
+    position: absolute;
+    left: -.20833333rem;
+    padding: .03472222rem;
+    width: .20833333rem;
+    height: .34722222rem;
+    background-color: #2666b0;
+    font-size: .09722222rem;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_tag2 {
+    top: .48611111rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row {
+    border-bottom: .01041667rem solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .ivu-col-span-10 {
+    padding: .15277778rem .20833333rem;
+    width: 43%;
+    border-right: 1px solid #ddd
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .ivu-col-span-14 {
+    width: 57%
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left {
+    position: relative;
+    padding-top: .26388889rem;
+    text-align: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up {
+    margin-bottom: .20833333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size:14px;
+    color: #333
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle {
+    padding: 0 .06944444rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle .ss-icon-jiantou2 {
+    font-size: .13888889rem;
+    color:#666666;
+    font-weight: 600
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list {
+    position: absolute;
+    top: .06944444rem;
+    right: .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag {
+    position: relative;
+    margin-right: .10416667rem;
+    padding: .01388889rem .06944444rem;
+    font-size:14px;
+    color: #fff;
+    border-radius: .02777778rem;
+    background-color: #ec8326
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag:last-of-type {
+    margin-right: 0
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag:before {
+    content: "";
+    position: absolute;
+    left: -.02777778rem;
+    bottom: 0;
+    border: .05555556rem solid #ec8326;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_hot {
+    background-color: #ee352b
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_hot:before {
+    border-bottom-color:#ee352b
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_no {
+    background-color: #ccc
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_no:before {
+    border-bottom-color: #ccc
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_plus {
+    background-color: #441f04;
+    color: #ffb525
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag_plus:before {
+    border-bottom-color: #441f04
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag {
+    background-color: red
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag:before {
+    border-bottom-color: red
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .ivu-icon {
+    padding-right: .03472222rem;
+    font-size: .13888889rem;
+    color: #ee352b;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left span {
+    font-size: .09722222rem;
+    color: #333;
+    vertical-align: middle
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .rcl_down_company {
+    margin-right: .10416667rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .rcl_down_flight {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right {
+    padding-left: .13888889rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right span {
+    font-size: .09722222rem;
+    color: #333
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right em {
+    font-size: .09722222rem;
+    color: #666
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_ext {
+    margin-top: .06944444rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_ext .rcl_ext_left {
+    float: left;
+    font-size: .09722222rem;
+    color: #ababab
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_left .rcl_ext .rcl_ext_right {
+    float: right;
+    padding-left: .13888889rem
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_price_list {
+    padding: .26388889rem .31944444rem .20833333rem .22222222rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_price_list .rcr_price_item {
+    width: .59722222rem;
+    height: .22rem;
+    line-height: .22rem;
+    font-size:14px;
+    color: #333;
+    background-color: #f2f2f2;
+    text-align: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_btns_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_btns_list .rcr_btns_item {
+    width: 1.04166667rem;
+    height: .20833333rem;
+    border-radius:2px;
+    font-size: 16px;
+    color: #fff;
+    line-height: .20833333rem;
+    text-align: center;
+    cursor: pointer
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_btns_list .price_detail_btn {
+    background-color: #1f407d
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_btns_list .buy_now_btn {
+    margin: 0 .10416667rem;
+    background-color: #ee352b
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row .result_content_right .rcr_btns_list .customer_service_btn {
+    background-color: #eaf0fb;
+    border: 1px solid #1f407d;
+    color: #1f407d;
+}
+
+#freight_query_index .freight_query_container .query_result .result_content .result_content_row:last-child {
+    border-bottom: none
+}
+
+#freight_query_index .freight_query_container .query_result .paging_box {
+    margin-top: .13888889rem;
+    height: 1.11111111rem;
+    line-height: 1.11111111rem;
+    text-align: center;
+    background-color: #fff
+}

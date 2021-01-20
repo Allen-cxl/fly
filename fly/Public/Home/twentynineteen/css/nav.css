@@ -1,0 +1,33 @@
+.container{
+	height:46px;
+	width:1140px;
+	margin:0px auto;
+	overflow:hidden;
+	padding:5px 0;
+}
+.bg-light {
+	padding:8px 9px;
+    background-color: #f8f9fa!important;
+}
+.navbar-nav{
+	flex-direction: row;
+	    padding-left: 0;
+		
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+	flex-grow: 1;
+    align-items: center;
+}
+.navbar-brand{
+	position:absolute;
+}
+.nav-item {
+	    list-style: none;
+		 float:left;
+		    display: list-item;
+    text-align: -webkit-match-parent;
+}

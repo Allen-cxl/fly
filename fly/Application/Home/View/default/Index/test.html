@@ -1,0 +1,71 @@
+<h3 class="page-header"><i class="fa fa-calendar"></i> 工作日历</h3>
+
+<style>
+    .h3-month
+    {
+        margin:10px 0;
+    }
+    .h3-month span
+    {
+        display:inline-block;
+        border-radius: 5px;
+        background-color: #eee;
+        border:solid 1px #ddd;
+        padding:0 10px;
+        font-size:0.9;
+    }
+
+    #tbDayList{
+        width:auto;
+    }
+    #tbDayList th{
+        font-size:30px;
+    }
+    #tbDayList .td-day{
+        width:100px;
+        height:10px;
+        line-height: 100px;
+        padding:0;
+        font-size:50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:#72B9F7;
+    }
+    #tbDayList .other{
+        color:#999;
+    }
+    #tbDayList .future{
+        color:#bbb;
+    }
+    #tbDayList .today{
+        color:blue;
+    }
+</style>
+    
+<h3 class="h3-month">
+    <a href="/index.php?_=work_log::day_report&month={$month_pre}"><i class="fa fa-chevron-left"></i></a>
+    <span>{$month_cur}</span>
+	<neq name="month_next" value="">
+    <a href="/index.php?_=work_log::day_report&month={ $month_next }"><i class="fa fa-chevron-right"></i></a>
+	</neq>
+</h3>
+
+<table id="tbDayList" class="tb">
+    <thead>
+        <th>周一</th>
+        <th>周二</th>
+        <th>周三</th>
+        <th>周四</th>
+        <th>周五</th>
+        <th style="color:blue;">周六</th>
+        <th style="color:blue;">周日</th>
+    </thead>
+    <tbody>
+        { foreach $list as $week }
+        <tr>
+            { foreach $week as $r }
+            <td class="td-day { $r.class }" data-dt="{ $r.dt }">{ $r.day }</td>
+            { /foreach }
+        </tr>
+        { /foreach }
+    </tbody>
+</table>

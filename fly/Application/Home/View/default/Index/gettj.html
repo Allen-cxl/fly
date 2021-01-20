@@ -1,0 +1,101 @@
+<foreach name="list" item="vo">		
+		<div class="result_content w">
+                                    <span class="result_content_tag" <eq name="vo.flytype" value="0">style="background-color: rgb(236, 131, 38);"</eq>>{:flyType($vo["flytype"])}</span>
+                                    <eq name="vo.special" value="1"><span class="result_content_tag2">特价</span></eq>
+                                    <div class="ivu-row result_content_row">
+                                        <div class="ivu-col ivu-col-span-10 result_content_left">
+                                            <div class="rcl_up">
+                                                <div class="rcl_up_left">
+                                                    <p>({$vo.cportcode})</p>
+                                                    <p>{$vo.cport}</p>
+                                                </div>
+                                                <div class="rcl_up_middle">
+                                                    <i class="ivu-icon ss-icon ss-icon-jiantou2"></i>
+                                                </div>
+                                                <div class="rcl_up_right">
+                                                    <p>({$vo.mportcode})</p>
+                                                    <p>{$vo.mport}</p>
+                                                </div>
+                                                <div class="tag_list">
+                                                    <div class="rcl_up_tag">有舱</div>
+                                                   <eq name="vo.hot" value="1"> <div class="rcl_up_tag rcl_up_tag_hot">热销</div></eq>
+                                                    </div>
+                                            </div>
+                                            <div class="rcl_down">
+                                                <div class="rcl_down_left">
+                                                    <div class="rcl_down_company">
+                                                        <i class="ivu-icon ivu-icon-md-plane"></i>
+                                                        <span>
+                                                            <a href="" target="_blank">{$cp[$vo["company"]]}</a></span>
+                                                    </div>
+                                                    <div class="rcl_down_flight">
+                                                        <i class="ivu-icon ivu-icon-ios-plane"></i>
+                                                        <span>航班: {$vo.flight}</span></div>
+                                                </div>
+                                                <div class="rcl_down_right">
+                                                    <span>
+                                                        <Img class="tg_huowu" src="/Public/Home/twentynineteen/img/huowu.png"></Img>
+                                                        <!---->
+                                                        <!---->
+                                                        <!---->
+                                                        <!---->
+                                                        <!---->包装类型:</span>
+                                                    <em>{:packingType($vo["packingtype"])}</em></div>
+                                            </div>
+                                            <div class="rcl_ext">
+                                                <!---->
+                                                <!----></div>
+                                        </div>
+                                        <div class="ivu-col ivu-col-span-14 result_content_right">
+                                            <ul class="rcr_price_list">
+												<php>
+												$gradient=explode(";",$vo["gradient"]);
+												</php>
+												<foreach name="gradient" item="vo1">
+											<li class="rcr_price_item">{$vo1}</li>
+											</foreach>
+											</ul>
+                                            <ul class="rcr_btns_list">
+                                                <li class="rcr_btns_item customer_service_btn" onclick="detail({$vo.id})">价格详情</li>
+                                                <li class="rcr_btns_item buy_now_btn" onclick="pay({$vo.id})">立即购买</li>
+                                                <li class="rcr_btns_item customer_service_btn" onclick="javascript:window.open('/home/login/zixun');">客服咨询</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+				</foreach>				
+                                <div class="paging_box">
+                                    <ul class="ivu-page">
+                                        <span class="ivu-page-total">共 {$count}条</span>
+                                        <li data-p="{$page.tou}" title="上一页" class="page-lin ivu-page-prev <eq name="page.tou" value="0">ivu-page-disabled</eq>">
+                                            <a>
+                                                <i class="ivu-icon ivu-icon-ios-arrow-back"></i>
+                                            </a>
+                                        </li>
+										<foreach name="page.num" item="vo">
+                                        <li data-p="{$vo}" class="page-lin ivu-page-item <eq name="vo" value="$page['now']">ivu-page-item-active</eq>">
+                                            <a>{$vo}</a>
+                                        </li>
+										</foreach>
+                                        <!---->
+                                        <!---->
+                                        <!--
+										 <li title="向前 5 页" class="ivu-page-item-jump-prev">
+										 <a>
+										 <i class="ivu-icon ivu-icon-ios-arrow-back"></i>
+										 </a>
+										 </li>
+                                    
+                                        <li title="向后 5 页" class="ivu-page-item-jump-next">
+                                            <a>
+                                                <i class="ivu-icon ivu-icon-ios-arrow-forward"></i>
+                                            </a>
+                                        </li>
+											-->
+                                        <li data-p="{$page.wei}" title="下一页" class=" page-lin ivu-page-next <eq name="page.wei" value="0">ivu-page-disabled</eq>">
+                                            <a>
+                                                <i class="ivu-icon ivu-icon-ios-arrow-forward"></i>
+                                            </a>
+                                        </li>
+                                        <!----></ul>
+                                </div>
+								<script>$("#num").html('{$count}');</script>

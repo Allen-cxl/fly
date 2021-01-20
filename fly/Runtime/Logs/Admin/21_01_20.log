@@ -1,0 +1,1776 @@
+[ 2021-01-20T09:47:18+08:00 ] 180.169.174.154 /admin.php?s=/fly/tjlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjlist%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 5 行.
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 179 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2021-01-20T09:47:24+08:00 ] 180.169.174.154 /admin.php?s=/Fly/tjlist.html&mport=%E8%BE%BE%E5%8D%A1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001531s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjlist%' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 AND `mport` LIKE '%达卡%' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 AND `mport` LIKE '%达卡%' LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2021-01-20T09:47:26+08:00 ] 180.169.174.154 /admin.php?s=/fly/company.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/company%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 ORDER BY sort asc LIMIT 0,20   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_company` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 5 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2021-01-20T09:47:33+08:00 ] 180.169.174.154 /admin.php?s=/Fly/company.html&name=%E6%B8%AF%E9%BE%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/company%' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_company` WHERE `isdel` = 0 AND `cname` LIKE '%港龙%' ORDER BY sort asc LIMIT 0,20   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_company` WHERE `isdel` = 0 AND `cname` LIKE '%港龙%' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 5 行.
+NOTIC: [8] Undefined index: pic /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 125 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/62883f0cc26a9e009c2cf2bd816f42e8.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2021-01-20T09:47:35+08:00 ] 180.169.174.154 /admin.php?s=/fly/tjlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000979s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjlist%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 5 行.
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 179 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2021-01-20T10:01:03+08:00 ] 101.224.225.13 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+
+[ 2021-01-20T10:01:03+08:00 ] 101.224.225.13 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2021-01-20T10:01:03+08:00 ] 101.224.225.13 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2021-01-20T10:01:11+08:00 ] 180.169.174.154 /admin.php?s=/fly/tjedite/id/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjedite%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 166 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE ( id=32 ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/44081a111de94d92e7908291d6854f82.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/44081a111de94d92e7908291d6854f82.php 第 391 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2021-01-20T10:09:29+08:00 ] 101.224.225.13 /admin.php?s=/Public/verify.html&random=0.560531037075527
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2021-01-20T10:09:55+08:00 ] 101.224.225.13 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined index: lite /data/home/byu7397920001/htdocs/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `lovevi_member` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`money`,`tjm` FROM `lovevi_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_action` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_action_log` [ RunTime:0.0036s ]
+SQL: INSERT INTO `lovevi_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','1709236493','member','1','1611108595','admin在2021-01-20 10:09登录了后台') [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined offset: 1 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 797 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 797 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1611022195 LIMIT 1   [ RunTime:0.0037s ]
+SQL: UPDATE `lovevi_member` SET `login`=`login`+1,`last_login_time`='1611108595',`last_login_ip`='1709236493' WHERE `uid` = 1 [ RunTime:0.0034s ]
+
+[ 2021-01-20T10:09:55+08:00 ] 101.224.225.13 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2021-01-20T10:10:00+08:00 ] 101.224.225.13 /admin.php?s=/tconfig/website.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000999s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Tconfig/website%' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 143 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 143  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 143 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '网站设置' AND `pid` = 143 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '用户' AND `pid` = 143 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '首页跳转' AND `pid` = 143 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_tconfig` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_tconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/07062d7cee14f6629d62005b21c043c1.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/07062d7cee14f6629d62005b21c043c1.php 第 303 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2021-01-20T10:10:11+08:00 ] 101.224.225.13 /admin.php?s=/fly/tjlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjlist%' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 5 行.
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 179 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2021-01-20T10:10:12+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000993s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2021-01-20T10:10:16+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2021-01-20T10:11:40+08:00 ] 101.89.19.149 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+
+[ 2021-01-20T10:11:59+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0039s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Casablanca 卡萨布兰卡','CMN	','1','Mohammed v international Airport 穆罕默德五世国际机场','Morocco 摩洛哥 (MA)','GMMN','Casablanca-Settat Region 卡萨布兰卡-塞塔特大区','-01:00','Africa','海关机场','Closed on Saturday and Sunday.','0','1611108719') [ RunTime:0.0036s ]
+
+[ 2021-01-20T10:12:01+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002841s ]
+
+[ 2021-01-20T10:13:27+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0036s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Lagos 拉各斯','LOS','1','Murtala Muhammed International Airport 穆尔塔拉穆罕默德国际机场','Nigeria 尼日利亚 (NG)','DNMM','lagos State 拉各斯州','+01:00','Africa','海关机场 城市代码','Closed on Saturday and Sunday.','0','1611108807') [ RunTime:0.0034s ]
+
+[ 2021-01-20T10:13:29+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0039s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2021-01-20T10:15:13+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0033s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Lusaka 卢萨卡','LUN','1','Lusaka International Airport 卢萨卡国际机场','Zambia 赞比亚 (ZM)','FLLS','Lusaka Province 卢萨卡省','+02:00','Africa','海关机场 城市代码','','0','1611108913') [ RunTime:0.0033s ]
+
+[ 2021-01-20T10:15:14+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2021-01-20T10:16:45+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0034s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Khartoum 喀土穆','KRT','1','Khartoum International Airport 喀土穆国际机场','Sudan 苏丹 (SD)','HSSS','Khartoum State 喀土穆州','+03:00','Africa','海关机场 城市代码','','0','1611109005') [ RunTime:0.0033s ]
+
+[ 2021-01-20T10:16:46+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2021-01-20T10:19:08+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0035s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Tripoli 的黎波里','TIP','1','Tripoli International Airport 的黎波里国际机场','Libya 利比亚 (LY)','HLLT','Tripoli District 的黎波里省','+02:00','Africa','海关机场 城市代码','Closed on Friday and SaturdayOpen Sunday -Thursday.','0','1611109148') [ RunTime:0.0032s ]
+
+[ 2021-01-20T10:19:10+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2021-01-20T10:20:47+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001612s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0025s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Algiers 阿尔及尔','ALG	','1','Houari Boumediene Airport 胡阿里布迈丁机场','Algeria 阿尔及利亚 (DZ)','DAAG','Algiers Province 阿尔及尔省','+01:00','Africa','海关机场 城市代码','Closed on Friday and Saturday, open<br>on Sunday.','0','1611109247') [ RunTime:0.0024s ]
+
+[ 2021-01-20T10:20:49+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0024s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2021-01-20T10:22:37+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0033s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Tunis 突尼斯','TUN','1','Carthage Airport 突尼斯-迦太基国际机场','Tunisia 突尼斯 (TN)','DTTA','Tunis Governorate 突尼斯省','+01:00','Africa','海关机场 城市代码','Closed on Saturday and Sunday.','0','1611109357') [ RunTime:0.0029s ]
+
+[ 2021-01-20T10:22:39+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2021-01-20T10:25:36+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0038s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Cotonou 科托努','COO','1','Cotonou Cadjehoun Airport 柯多努国际机场','Benin 贝宁 (BJ)','DBBB','Littoral Department 滨海省','+01:00','Africa','海关机场 城市代码','','0','1611109536') [ RunTime:0.0036s ]
+
+[ 2021-01-20T10:25:37+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000982s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0035s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0039s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2021-01-20T10:27:48+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0037s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Entebbe 恩德培','EBB','1','Entebbe International Airport 恩德培国际机场','Uganda 乌干达 (UG)','HUEN','Wakiso District 瓦基索区','+03:00','Africa','海关机场 城市代码','','0','1611109668') [ RunTime:0.0032s ]
+
+[ 2021-01-20T10:27:49+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001188s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2021-01-20T10:29:32+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0030s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Yerevan 埃里温','EVN','1','Zvartnots International Airport 兹瓦尔特诺茨国际机场','Armenia 亚美尼亚 (AM)','UDYZ','Yerevan 埃里温','+03:00','Asia','海关机场 城市代码','Closed on Saturday and Sunday.','0','1611109772') [ RunTime:0.0029s ]
+
+[ 2021-01-20T10:29:33+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0035s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2021-01-20T10:30:45+08:00 ] 101.224.225.13 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+
+[ 2021-01-20T10:30:45+08:00 ] 101.224.225.13 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2021-01-20T10:30:45+08:00 ] 101.224.225.13 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2021-01-20T10:30:53+08:00 ] 101.224.225.13 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: lite /data/home/byu7397920001/htdocs/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `lovevi_member` [ RunTime:0.0032s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`money`,`tjm` FROM `lovevi_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_action` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_action_log` [ RunTime:0.0033s ]
+SQL: INSERT INTO `lovevi_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','1709236493','member','1','1611109853','admin在2021-01-20 10:30登录了后台') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Undefined offset: 1 /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 797 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /data/home/byu7397920001/htdocs/Application/Common/Common/function.php 第 797 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1611023453 LIMIT 1   [ RunTime:0.0032s ]
+SQL: UPDATE `lovevi_member` SET `login`=`login`+1,`last_login_time`='1611109853',`last_login_ip`='1709236493' WHERE `uid` = 1 [ RunTime:0.0031s ]
+
+[ 2021-01-20T10:30:53+08:00 ] 101.224.225.13 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2021-01-20T10:30:56+08:00 ] 101.224.225.13 /admin.php?s=/fly/tjlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tjlist%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0035s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_goodstype` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name` FROM `lovevi_goodstype` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lovevi_company` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`cname` FROM `lovevi_company` WHERE ( isdel=0 ) ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lovevi_freight` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_freight` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_freight` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 5 行.
+NOTIC: [8] Undefined index:  /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 179 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/aeef05a78addcb67f770cd3036589a8a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2021-01-20T10:30:58+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2021-01-20T10:31:13+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0035s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0035s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0035s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0042s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Mombasa 蒙巴萨','MBA','1','Moi International Airport 莫伊国际机场','Kenya 肯尼亚 (KE)','HKMO','Mombasa County 蒙巴萨郡','+03:00','Africa','海关机场 城市代码','','0','1611109873') [ RunTime:0.0038s ]
+
+[ 2021-01-20T10:31:15+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2021-01-20T10:31:19+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2021-01-20T10:32:05+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2021-01-20T10:32:06+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite/id/161.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=161 ) LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2021-01-20T10:32:09+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2021-01-20T10:32:17+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2021-01-20T10:33:19+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0043s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Nairobi 内罗毕','NBO','1','Jomo Kenyatta International Airport 乔莫·肯雅塔国际机场','Kenya 肯尼亚 (KE)','HKJK','Nairobi County 内罗毕郡','+03:00','Africa','海关机场 城市代码','','0','1611109999') [ RunTime:0.0039s ]
+
+[ 2021-01-20T10:33:21+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2021-01-20T10:34:47+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2021-01-20T10:34:48+08:00 ] 101.224.225.13 /admin.php?s=/fly/threelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001456s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/threelist%' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE `isdel` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lovevi_threecode` WHERE `isdel` = 0 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/8af401a539ef01575c204279c66937ec.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2021-01-20T10:34:50+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2021-01-20T10:36:18+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000996s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0025s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Douala 杜阿拉','DLA','1','Douala International Airport 杜阿拉国际机场','Cameroon 喀麦隆 (CM)','FKKD','Littoral Province 利托拉省','+01:00','Africa','海关机场 城市代码','','0','1611110178') [ RunTime:0.0023s ]
+
+[ 2021-01-20T10:36:20+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2021-01-20T10:38:15+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000996s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0036s ]
+SQL: INSERT INTO `lovevi_threecode` (`city`,`threecode`,`tag`,`airport`,`country`,`icao`,`quyu`,`shiqu`,`zhou`,`jitype`,`bank`,`id`,`time`) VALUES ('Dar es Salaam 达累斯萨拉姆','DAR','1','Julius Nyerere International Airport 朱利叶斯·尼雷尔国际机场','Tanzania 坦桑尼亚 (TZ)','HTDA','Dar es Salaam Region 达累斯萨拉姆区','+03:00','Africa','海关机场 城市代码','Closed on Saturday and Sunday.','0','1611110295') [ RunTime:0.0032s ]
+
+[ 2021-01-20T10:38:16+08:00 ] 101.224.225.13 /admin.php?s=/fly/tedite.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `lovevi_menu` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`url` FROM `lovevi_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `pid` FROM `lovevi_menu` WHERE ( pid !=0 AND url like '%Fly/tedite%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lovevi_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT DISTINCT  `group` FROM `lovevi_menu` WHERE `group` <> '' AND `pid` = 165  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`url` FROM `lovevi_menu` WHERE `pid` = 165 AND `hide` = 0  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '运价管理' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '航线' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '空运工具' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `lovevi_menu` WHERE `group` = '类别' AND `pid` = 165 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `lovevi_threecode` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lovevi_threecode` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: meta_title /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 5 行.
+NOTIC: [8] Use of undefined constant LOVEVI_VERSION - assumed 'LOVEVI_VERSION' /data/home/byu7397920001/htdocs/Runtime/Cache/Admin/2e34b7c23c0ef32f4334c5dea0cdd987.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+

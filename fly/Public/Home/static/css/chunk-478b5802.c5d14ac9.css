@@ -1,0 +1,440 @@
+#order_menu[data-v-2a409750] .ivu-menu {
+    position: relative;
+    width: 1.66666667rem !important;
+    height: auto !important;
+    background-color: #fff
+}
+
+#order_menu[data-v-2a409750] .ivu-menu:before {
+    content: "";
+    position: absolute;
+    top: -.17361111rem;
+    left: 0;
+    width: 1.66666667rem;
+    height: .17361111rem;
+    background-color: #333;
+    border-top-right-radius: .17361111rem
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group .ivu-menu-item-group-title {
+    padding-left: .13888889rem;
+    font-size: .09722222rem;
+    color: #333;
+    font-weight: 600
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group ul .ivu-menu-item {
+    padding-left: .13888889rem
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group ul .ivu-menu-item span {
+    color: #666
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group ul .ivu-menu-item-active {
+    background-color: #ffdede
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group ul .ivu-menu-item-active span {
+    color: #fd1d01
+}
+
+#order_menu[data-v-2a409750] .ivu-menu .ivu-menu-item-group ul .ivu-menu-item-active:after {
+    width: .02777778rem;
+    background: #fd1d01
+}
+
+.allcover {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.center {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.center, .ct {
+    position: absolute;
+    top: 50%
+}
+
+.ct {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.cl {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.focus_air_freight_list {
+    padding: 0 .13888889rem
+}
+
+.focus_air_freight_list .mf-s-goods /deep/ .ivu-menu .ivu-menu-item.ivu-menu-item-active {
+    color: red;
+    border-bottom-color: red
+}
+
+.focus_air_freight_list .fruit_page {
+    background-color: #fff;
+    width: 100%;
+    height: 1.25rem;
+    line-height: .48611111rem;
+    text-align: center
+}
+
+.focus_air_freight_list .airlines_offer_box {
+    margin-top: .06944444rem;
+    width: 100%
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header {
+    width: 100%;
+    height: .34722222rem;
+    color: #fff;
+    background-color: #fff
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #000
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left {
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_departure .ivu-icon-md-radio-button-off {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_departure span {
+    padding-left: .05555556rem;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left .ivu-icon-md-arrow-round-forward {
+    padding: 0 .08333333rem;
+    font-size: .16666667rem;
+    color: #fff
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_destination .ss-icon-zhongdian1 {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_destination span {
+    padding-left: .05555556rem;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_right {
+    width: 60%;
+    height: 100%
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_right .kg_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_header .result_header_row .result_header_right .kg_list .kg_item {
+    width: .59722222rem;
+    height: .34722222rem;
+    line-height: .34722222rem;
+    text-align: center;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content {
+    background-color: #fff
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row {
+    border: .00694444rem solid #ddd
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .ivu-col-span-10 {
+    width: 40%;
+    border-right: .00694444rem solid #ddd
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .ivu-col-span-14 {
+    width: 60%;
+    height: 100%
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left {
+    position: relative;
+    padding-top: .26388889rem;
+    text-align: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up {
+    margin-bottom: .20833333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: .09722222rem;
+    color: #333;
+    text-align: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_left, .focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_right {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_left p, .focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_right p {
+    font-size: .09722222rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_left span, .focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_right span {
+    font-size: .09027778rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 0 .06944444rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle .ivu-icon-md-arrow-round-forward {
+    font-size: .13888889rem;
+    color: #ff4f01
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list {
+    position: absolute;
+    top: .06944444rem;
+    right: .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag {
+    position: relative;
+    margin-right: .10416667rem;
+    padding: .01388889rem .06944444rem;
+    font-size: .09722222rem;
+    color: #fff;
+    border-radius: .02777778rem;
+    background-color: #ff4f01
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag:before {
+    content: "";
+    position: absolute;
+    left: -.02777778rem;
+    bottom: 0;
+    border: .05555556rem solid #ff4f01;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag {
+    background-color: red
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag:before {
+    border-bottom-color: red
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down {
+    padding: 0 .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .ivu-icon {
+    padding-right: .03472222rem;
+    font-size: .13888889rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left span {
+    font-size: .08333333rem;
+    color: #333;
+    vertical-align: middle
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .rcl_down_company {
+    margin-right: .06944444rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right span {
+    font-size: .08333333rem;
+    color: #333
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right em {
+    font-size: .08333333rem;
+    color: #666
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_ext {
+    margin-top: .06944444rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_ext .rcl_ext_left {
+    float: left;
+    color: #ababab
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_ext .rcl_ext_right {
+    float: right;
+    padding-left: .13888889rem
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right {
+    padding: .13888889rem 0
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_price_list {
+    padding-bottom: .13888889rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_price_list .rcr_price_item {
+    width: .59722222rem;
+    height: .25rem;
+    line-height: .25rem;
+    font-size: .11111111rem;
+    color: #333;
+    background-color: #f0eff4;
+    text-align: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .rcr_btns_item {
+    width: 1.04166667rem;
+    height: .20833333rem;
+    font-size: .09722222rem;
+    color: #fff;
+    line-height: .20833333rem;
+    text-align: center
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .price_detail_btn {
+    background-color: #20407d
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .buy_now_btn {
+    margin: 0 .10416667rem;
+    background-color: #f08300
+}
+
+.focus_air_freight_list .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .customer_service_btn {
+    background-color: #2665b2
+}
+
+#my_focus_airline .side_navbar_container .center_nav_box[data-v-4fe8668b] {
+    height: .41666667rem;
+    line-height: .41666667rem;
+    background-color: #fbfbfb;
+    border-top: .00694444rem solid #ddd
+}
+
+#my_focus_airline .side_navbar_container .center_content_box[data-v-4fe8668b] {
+    padding: .41666667rem 0;
+    background-color: #f0eff4
+}
+
+#my_focus_airline .side_navbar_container .center_content_box .center_content[data-v-4fe8668b] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+#my_focus_airline .side_navbar_container .center_content_box .center_content .content_container[data-v-4fe8668b] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: .13888889rem;
+    min-width: 6.52777778rem;
+    background-color: #fff
+}

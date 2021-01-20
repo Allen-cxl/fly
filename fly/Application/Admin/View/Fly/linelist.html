@@ -1,0 +1,146 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<script type="text/javascript" src="/Public/Home/DatePicker/WdatePicker.js"></script>
+	<!--上传图片插件start-->
+   <script type='text/javascript' src='/Public/Admin/uploade/jquery-2.0.3.min.js'></script>
+	<script type='text/javascript' src='/Public/Admin/uploade/jquery.form.js'></script>
+	<form id='myupload' action='/admin.php?s=/index/uppic3' method='post' enctype='multipart/form-data'>
+		<input type="file" id="uploadphoto" name="uploadfile" value="请点击上传图片"  style="display:none;" />
+	</form>
+<script type="text/javascript">
+$(document).ready(function(e) {
+   var thisdiv;
+   $(".uploadbtn").click(function(){
+		$("#uploadphoto").trigger('click');
+		thisdiv=$(this);
+   });
+   $("#uploadphoto").change(function(){
+  	 $("#myupload").ajaxSubmit({ 
+  		dataType:  'json', //数据格式为json 
+  		beforeSend: function() { //开始上传 
+  			thisdiv.parent().find(".progress").show();
+  			var percentVal = '0%';
+  			thisdiv.parent().find(".progress-bar").width(percentVal);
+  			//percent.html(percentVal);
+  		}, 
+  		uploadProgress: function(event, position, total, percentComplete) { 
+  			var percentVal = percentComplete + '%'; //获得进度 
+  			thisdiv.parent().find(".progress-bar").width(percentVal); //上传进度条宽度变宽 
+  			//percent.html(percentVal); //显示上传进度百分比 
+  		}, 
+  		success: function(data) {
+			 
+			if(data.status == 1){
+				var src = data.url;  
+				 $.post("/admin.php?s=/fly/pidata/y/2",{url:src},function(data){
+						alert(data);
+						history.go(0);
+				});
+			}else{
+				$(".res").html(data.content);
+			}
+  			thisdiv.parent().find(".progress").hide();		
+  		}, 
+  		error:function(xhr){ //上传失败 
+  		   alert("上传失败"); 
+  		   thisdiv.parent().find(".progress").hide(); 
+  		} 
+  	}); 
+   });
+
+});
+</script>
+<!--上传图片插件end-->
+	<div class="main-title">
+		<h2>航线推荐</h2>
+	</div>
+	<div class="cf">
+	<div class="fl">
+            <a class="btn" href="{:U("fly/ledite")}">新 增</a>
+			<a class="btn uploadbtn" href="javascript:" >批量导入</a>
+		   <div class="uploadify-queue-item progress" style="display:none;"> <div class="cancel">	 <a href="javascript:">X</a></div><span class="fileName">文件名 大小</span><span class="data"></span><div class="uploadify-progress"><div class="uploadify-progress-bar progress-bar" style="width:20%"><!--Progress Bar--></div></div></div>
+         
+        </div>
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="mport" class="search-input" value="{:I('mport')}" placeholder="请输入目的港">
+				<a class="sch-btn" href="javascript:;" id="search" url="{:U('linelist')}"><i class="btn-search"></i></a>
+			</div>
+		</div>
+    </div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>始发港</th>
+					<th>目的港</th>
+					<th>货盘数据</th>
+					<th>预计出运日</th>
+					<th>航空公司</th>
+					
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.cport}</td>
+						<td>{$vo.mport}</td>
+						<td>{$vo.hdata}</td>
+						<td>{$vo.ctime}</td>
+						<td>{$vo.company}</td>
+						
+						<td>
+							<a  title="编辑" href="{:U('fly/ledite','id='.$vo["id"])}">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="{:U('fly/ldel','id='.$vo["id"])}">删除</a>
+						</td>
+					</tr>
+					
+					</tr>
+				</volist>
+				
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+        {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+	<script type="text/javascript">
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('fly/linelist')}');
+		})
+	</script>
+</block>

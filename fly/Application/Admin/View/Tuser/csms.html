@@ -1,0 +1,88 @@
+<extend name="Public/base" />
+
+<block name="style">
+	<style>
+		.dragsort {
+		    width:400px;
+		}
+	</style>
+</block>
+
+<block name="body">
+
+<link href="/Public/Home/css/css1.css" rel="stylesheet" type="text/css">
+	<!-- 标题栏 -->
+	<div class="main-title cf">
+		<h2>聊天窗口</h2>
+	</div>
+<div class="uchar" style="height:600px;width:540px;" id="uchar">
+        	<ul>
+			<foreach name="list" item="vo">
+			<eq name="vo.type" value="5">
+			<li id="chat_u2" class="chat-li chat-sys"><div class="chat-user"><img src="{$vo.pic}"><cite>{$vo.name}<i>{:date("m:d H:i",$vo["time"])}</i></cite></div><div class="chat-text">{$vo.content}</div></li>
+			<else/>
+			<li id="chat_u5" class="chat-li chat-mine"><div class="chat-user"><img src="{$vo.pic}"><cite>{$vo.name}<i>{:date("m:d H:i",$vo["time"])}</i></cite></div><div class="chat-text">{$vo.content}</div></li>
+			</eq>
+			</foreach>
+			</ul>
+        </div>
+	<!-- 修改密码表单 -->
+		<div class="form-item cf">
+			<div class="controls">
+			<input type="hidden" id="uid" value="{:I("get.uid")}"  class="text input-large">
+				<input type="text" style="padding:8px;" id="con1" value="" name="name" class="text input-large">
+				<button type="submit" onclick="tosub()" class="btn submit-btn ajax-post" target-form="form-horizontal">发送</button>
+			</div>
+		</div>
+<script>
+ $('#uchar').scrollTop($('#uchar')[0].scrollHeight);
+function tosub(){
+var mydate = new Date();
+var time=mydate.toLocaleString( ); 
+	var con=$("#con1").val();
+	var $txt='<li id="chat_u2" class="chat-li chat-sys"><div class="chat-user"><img src="/pic/sys.jpg"><cite>在线客服<i>'+time+'</i></cite></div><div class="chat-text">'+con+'</div></li>';
+	if(con==""){
+		alert("内容不允许为空");
+	}else{
+		$("#uchar ul").append($txt); $('#uchar').scrollTop($('#uchar')[0].scrollHeight);
+		$("#con").val("");
+		$.post("{:U("tuser/csend1")}",{con:$("#con1").val(),uid:$("#uid").val()},function(result){
+			
+		},"json");
+	}
+	
+}
+</script>
+<script>
+ $(function(){
+        setInterval('countdown()',3000);
+    })
+function countdown(){
+	$.post("{:U("tuser/csend")}",{uid:$("#uid").val()},function(result){
+		if(result.Success==1){
+			var txt="";
+			var arr=result.Data;
+			$.each(arr,function(index,value){
+			//alert(value.name);
+				txt=txt+'<li id="chat_u5" class="chat-li chat-mine"><div class="chat-user"><img src="'+value.pic+'"><cite>'+value.name+'<i>'+value.time+'</i></cite></div><div class="chat-text">'+value.text+'</div></li>';
+			});
+			$('#uchar ul').append(txt);
+			 $('#uchar').scrollTop($('#uchar')[0].scrollHeight);
+		}
+		
+	  },"json");
+}	
+</script>
+</block>
+
+<block name="script">
+	<present name="data">
+		<script type="text/javascript" src="__STATIC__/jquery.dragsort-0.5.1.min.js"></script>
+	</present>
+	<script type="text/javascript">
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('tuser/csms')}');
+		})
+	</script>
+</block>

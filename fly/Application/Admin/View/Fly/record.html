@@ -1,0 +1,100 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<script type="text/javascript" src="/Public/Home/DatePicker/WdatePicker.js"></script>
+	<div class="main-title">
+		<h2>订单列表</h2>
+	</div>
+	<div class="cf">
+	
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			
+		</div>
+    </div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>用户姓名</th>
+					<th>手机号</th>
+					<th>公司</th>
+					<th>始发港</th>
+					<th>目的港</th>
+					<th>开航日期</th>
+					<th>货物总称</th>
+					<th>预估重量</th>
+					<th>预估体积</th>
+					<th>预估件数</th>
+					<th>备注</th>
+					<th>委托书</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.uname}</td>
+						<td>{$vo.mobile}</td>
+						<td>{$vo.company}</td>
+						<td>{$vo.cport}</td>
+						<td>{$vo.mport}</td>
+						<td>{$vo.ktime}</td>
+						<td>{$vo.goods}</td>
+						<td>{$vo.weight}</td>
+						<td>{$vo.volume}</td>
+						<td>{$vo.num}</td>
+						<td>{$vo.remarks}</td>
+						<td><a href="http://{$_SERVER['HTTP_HOST']}/{$vo.wurl}">{$vo.wname}</a></td>
+						<td>
+							<a class="confirm ajax-get" title="删除" href="{:U('fly/redel','id='.$vo["id"])}">删除</a>
+							<a class="confirm ajax-get" title="确认" href="{:U('fly/resub','id='.$vo["id"])}"><eq name="vo.state" value="0">确认<else/>取消确认</eq></a>
+						</td>
+					</tr>
+					
+					</tr>
+				</volist>
+				
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+        {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+	<script type="text/javascript">
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('fly/record')}');
+		})
+	</script>
+</block>

@@ -1,0 +1,1074 @@
+#calendar {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-bottom: .10416667rem;
+    -webkit-box-shadow: 0 .01388889rem .01388889rem 0 rgba(0, 0, 0, .14), 0 .02083333rem .00694444rem -.01388889rem rgba(0, 0, 0, .1), 0 .00694444rem .03472222rem 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 .01388889rem .01388889rem 0 rgba(0, 0, 0, .14), 0 .02083333rem .00694444rem -.01388889rem rgba(0, 0, 0, .1), 0 .00694444rem .03472222rem 0 rgba(0, 0, 0, .12)
+}
+
+#calendar .month {
+    width: 100%;
+    background: #666
+}
+
+#calendar .month ul {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+#calendar .month ul,
+#calendar .year-month {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#calendar .year-month {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+#calendar .choose-year {
+    padding-left: .13888889rem;
+    padding-right: .13888889rem;
+    color: #fff
+}
+
+#calendar .choose-month {
+    text-align: center
+}
+
+#calendar .arrow {
+    padding: .071263rem .20833333rem;
+    cursor: pointer
+}
+
+#calendar .month ul li {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .02083333rem;
+    font-weight: 400
+}
+
+#calendar .weekdays {
+    margin: 0;
+    padding: .05244444rem 0;
+    background-color:#a5a5a5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #fff;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+#calendar .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #fff;
+    font-size: 14px;
+    font-weight:400;
+    text-align: center
+}
+
+#calendar .days {
+    padding: 0;
+    background: #fff;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+#calendar .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 14.2%;
+    height: .69444444rem;
+    text-align: center;
+    font-size: .25rem;
+    color: #000
+}
+
+#calendar .day-num {
+    height: .34722222rem;
+    line-height: .34722222rem;
+    font-size: 18px
+}
+
+#calendar .day-ext {
+    height: .34722222rem;
+    color: #555;
+    font-size: .08333333rem !important
+}
+
+#calendar li .active {
+    display: block;
+    background: #eee;
+    color: #000
+}
+
+#calendar .days li .event-open {
+    display: inline-block;
+    width: .23611111rem;
+    height: .23611111rem;
+    line-height: .23611111rem;
+    border-radius: 50%;
+    background: #07c160;
+    color: #fff
+}
+
+#calendar .days li .other-month {
+    padding: .03472222rem;
+    font-size: .11111111rem;
+    color: #dcdcdc
+}
+
+#calendar .popover {
+    color: #f9f9f9
+}
+
+#calendar .popover-inner {
+    background: #fff;
+    padding: .05555556rem;
+    border-radius: .03472222rem;
+    border: .00694444rem solid #ebebeb;
+    -webkit-box-shadow: 0 .03472222rem .13888889rem rgba(26, 26, 26, .1);
+    box-shadow: 0 .03472222rem .13888889rem rgba(26, 26, 26, .1)
+}
+
+#calendar .sort-item {
+    color: #8590a6;
+    height: .27777778rem;
+    line-height: .27777778rem;
+    border-color: #f9f9f9;
+    padding: 0 .13888889rem
+}
+
+.allcover {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.center {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.center,
+.ct {
+    position: absolute;
+    top: 50%
+}
+
+.ct {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.cl {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.text_animation {
+    display: block;
+    font-weight: 700;
+    color: #ffb525;
+    animation: changeshadow 1s ease-in infinite;
+    -webkit-animation: changeshadow 1s linear infinite;
+    -moz-animation: changeshadow 1s linear infinite;
+    -ms-animation: changeshadow 1s linear infinite;
+    -o-animation: changeshadow 1s linear infinite
+}
+
+@keyframes changeshadow {
+    0% {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+
+    50% {
+        text-shadow: 0 0 .27777778rem #fff
+    }
+
+    to {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+}
+
+@-webkit-keyframes changeshadow {
+    0% {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+
+    50% {
+        text-shadow: 0 0 .27777778rem #fff
+    }
+
+    to {
+        text-shadow: 0 0 .06944444rem #fff
+    }
+}
+
+#freight_details_container {
+    padding-bottom: .34722222rem;
+    background-color: #f2f2f2
+}
+
+#freight_details_container .nodata {
+    font-size: .08333333rem;
+    font-weight: 600;
+    color: #999;
+    line-height: 1.59722222rem;
+    text-align: center
+}
+
+#freight_details_container .subscirber {
+    text-align: center;
+    margin-top: .06944444rem
+}
+
+#freight_details_container .subscirber button {
+    margin: 0 .06944444rem
+}
+
+#freight_details_container .nav_bar_box {
+    border-top: .00694444rem solid #ddd;
+    border-bottom: .00694444rem solid #ddd;
+    background-color: #fbfbfb
+}
+
+#freight_details_container .nav_bar_box .navbar_list {
+    padding: .13888889rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .nav_bar_box .navbar_list .navbar_item {
+    padding-left: .03472222rem;
+    font-size: .09722222rem;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer
+}
+
+#freight_details_container .nav_bar_box .navbar_list .navbar_icon {
+    padding-left: .13888889rem
+}
+
+#freight_details_container .nav_bar_box .navbar_list .navbar_icon .ivu-icon-md-plane {
+    font-size: .20833333rem;
+    color: #666;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#freight_details_container .freight_details_content .fdc_info_buy_btn_collect {
+    background-color:#ec8326;
+    border-color: #ec8326
+}
+
+#freight_details_container .freight_details_content .fdc_info_buy_btn_qq {
+    background-color: #eaf0fb;
+    border: 1px solid #1f407d;
+    color: #1f407d
+}
+
+#freight_details_container .freight_details_content .fdc_head_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: auto;
+    margin-bottom: .13888889rem;
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left {
+    margin-right: .05555556rem;
+    width: 3.98611111rem;
+    height: 100%
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_img {
+    width: 100%;
+    height: 2.08333333rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts {
+    width: 100%;
+    height: 2.08333333rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts .fdc_echarts_head {
+    padding: .10416667rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts .fdc_echarts_head .ivu-select {
+    margin: 0 .06944444rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts .fdc_echarts_head .ivu-select .ivu-select-selection {
+    background-color: #f0f0f8
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts .fdc_echarts_head span {
+    color: #666
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_left .fdc_echarts .fdc_echarts_body {
+    width: 100%;
+    height: 1.73611111rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right {
+    padding-right: 10px;
+    width: 4.27083333rem;
+    border-left: .00694444rem solid #ddd;
+    text-align: center
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: .27777778rem;
+    padding-left: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_left span,
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_right span {
+    font-size:16px;
+    color:#ee352b
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_left p,
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_right p {
+    padding-top: .06944444rem;
+    font-size: 16px;
+    color: #333
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_middle {
+    padding: 0 .06944444rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_middle .ss-icon-jiantou2 {
+    font-size: .16666667rem;
+    color: #666666;
+    font-weight: 600
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag {
+    position: absolute;
+    top: -.20833333rem;
+    right: 0
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .tag_item {
+    position: relative;
+    margin-right:.10416667rem;
+    padding: .01388889rem .06944444rem;
+    font-size: 14px;
+    color: #fff;
+    border-radius: .02777778rem;
+    background-color: #ff4f01
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .tag_item1{
+    margin-right:0
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .tag_item:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -.03472222rem;
+    border: .06944444rem solid #ff4f01;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .tag_item:nth-of-type(2n) {
+    background-color: #2665b2
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .tag_item:nth-of-type(2n):before {
+    border-bottom-color: #2665b2
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .epidemic_tag {
+    background-color: red !important
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .epidemic_tag:before {
+    border-bottom-color: red !important
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .epidemic_tag_plus {
+    background-color: #441f04 !important;
+    color: #ffb525
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_airport .fdc_up_tag .tag_list .epidemic_tag_plus:before {
+    border-bottom-color: #441f04 !important
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table {
+    margin-top: .13888889rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-header table thead tr th {
+    background-color:#666
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-header table thead tr th .ivu-table-cell {
+    padding: 0
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-header table thead tr th .ivu-table-cell span {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-body table tbody tr td {
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-body table tbody tr td .ivu-table-cell {
+    padding: 0
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_airport_table .fdc_table .ivu-table-wrapper .ivu-table .ivu-table-body table tbody tr td .ivu-table-cell p {
+    font-size:14px;
+    color: #333
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info {
+    padding: .10416667rem 0 .10416667rem .13888889rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: auto
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item {
+    line-height: .16666667rem;
+    text-align: left
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item span {
+    font-size:16px;
+    color: #333;
+    font-weight:400
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item em {
+    padding-left: .06944444rem;
+    font-size: 16px;
+    color: #555555
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item:nth-of-type(5) em,
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item:nth-of-type(9) em,
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_desc .desc_list .desc_item:nth-of-type(10) em {
+    color: #ee352b
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_remark {
+    margin-top: .10416667rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_remark textarea {
+    background-color: #fbfbfb
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: .10416667rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn .btns_box .ivu-btn {
+    margin-right: .06944444rem;
+    width: .70rem;
+    height: .20833333rem
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn .btns_box .ivu-btn:last-of-type {
+    margin-right: 0
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn .btns_box .ivu-btn span {
+    font-size:16px;
+    color: #fff
+}
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn .btns_box .ivu-btn .tg_Stext{
+    color: #1f407d
+}
+
+#freight_details_container .freight_details_content .fdc_head_box .fdc_head_box_right .fdc_info .fdc_info_buy_btn .btns_box .ivu-btn-error {
+    width: .62rem;
+    background-color:#ee352b !important
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box {
+    margin-bottom: .41666667rem
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-bar .ivu-tabs-nav-container .ivu-tabs-nav-wrap {
+    height: .34722222rem;
+    text-align: left !important;
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-bar .ivu-tabs-nav-container .ivu-tabs-nav-wrap .ivu-tabs-nav-scroll .ivu-tabs-nav .ivu-tabs-ink-bar {
+    width: 0 !important;
+    height: 0 !important
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-bar .ivu-tabs-nav-container .ivu-tabs-nav-wrap .ivu-tabs-nav-scroll .ivu-tabs-nav .ivu-tabs-tab {
+    padding: 0;
+    width: 1.04166667rem;
+    height: .34722222rem;
+    line-height: .34722222rem;
+    font-size: 16px !important;
+    color: #1f407d !important;
+    text-align: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-bar .ivu-tabs-nav-container .ivu-tabs-nav-wrap .ivu-tabs-nav-scroll .ivu-tabs-nav .ivu-tabs-tab-active {
+    border-bottom:3px solid #1f407d
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane {
+    padding: .27777778rem .27777778rem .34722222rem .27777778rem;
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .desc_detail_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .desc_detail_box .detail_box_list {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .desc_detail_box .detail_box_list .detail_box_item {
+    line-height: .24305556rem;
+    font-size: 16px
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .desc_detail_box .detail_box_list .detail_box_item span {
+    display: inline-block;
+    width: .55555556rem;
+    color:#333;
+    font-weight:400
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .desc_detail_box .detail_box_list .detail_box_item em {
+    color: #555
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .flight_info_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .flight_info_box .flight_box_list {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .flight_info_box .flight_box_list .flight_box_item {
+    line-height: .24305556rem;
+    font-size: .09722222rem
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .flight_info_box .flight_box_list .flight_box_item span {
+    display: inline-block;
+    width: .55555556rem;
+    font-weight: 600
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .flight_info_box .flight_box_list .flight_box_item em {
+    color: #666
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .history_freight_box .ivu-table-wrapper .ivu-table .ivu-table-header span {
+    font-size: .09722222rem;
+    font-weight: 600
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .history_freight_box .ivu-table-wrapper .ivu-table .ivu-table-body .ivu-table-cell {
+    padding: 0
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box {
+    width: 100%
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header {
+    width: 100%;
+    height: .34722222rem;
+    color: #fff;
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #666
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left {
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_departure .ivu-icon-md-radio-button-off {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_departure span {
+    padding-left: .05555556rem;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left .ivu-icon-md-arrow-round-forward {
+    padding: 0 .08333333rem;
+    font-size: .16666667rem;
+    color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_destination .ss-icon-zhongdian1 {
+    font-size: .20833333rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_left .header_left_destination span {
+    padding-left: .05555556rem;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_right {
+    width: 60%;
+    height: 100%
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_right .kg_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_header .result_header_row .result_header_right .kg_list .kg_item {
+    width: .59722222rem;
+    height: .34722222rem;
+    line-height: .34722222rem;
+    text-align: center;
+    font-size: .09722222rem;
+    color: #fff;
+    font-weight: 600
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content {
+    background-color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row {
+    border-bottom: .00694444rem solid #ddd
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .ivu-col-span-10 {
+    width: 40%;
+    height: 1.11111111rem;
+    border-right: .00694444rem solid #ddd
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .ivu-col-span-14 {
+    width: 60%;
+    height: 1.11111111rem
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left {
+    position: relative;
+    padding-top: .26388889rem;
+    text-align: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up {
+    margin-bottom: .20833333rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .09722222rem;
+    color: #333
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle {
+    padding: 0 .06944444rem
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .rcl_up_middle .ivu-icon-md-arrow-round-forward {
+    font-size: .13888889rem;
+    color: #ff4f01
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list {
+    position: absolute;
+    top: .06944444rem;
+    right: .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag {
+    position: relative;
+    margin-right: .10416667rem;
+    padding: .01388889rem .06944444rem;
+    font-size: .09722222rem;
+    color: #fff;
+    border-radius: .02777778rem;
+    background-color: #ff4f01
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .rcl_up_tag:before {
+    content: "";
+    position: absolute;
+    left: -.02777778rem;
+    bottom: 0;
+    border: .05555556rem solid #ff4f01;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag {
+    background-color: red
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag:before {
+    border-bottom-color: red
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag_plus {
+    background-color: #441f04;
+    color: #ffb525
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_up .tag_list .epidemic_tag_plus:before {
+    border-bottom-color: #441f04
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down {
+    padding: 0 .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .ivu-icon {
+    padding-right: .03472222rem;
+    font-size: .13888889rem;
+    color: #ff4f01;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left span {
+    font-size: .09722222rem;
+    color: #333;
+    vertical-align: middle
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_left .rcl_down_company {
+    margin-right: .06944444rem
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right span {
+    font-size: .09722222rem;
+    color: #333
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_left .rcl_down .rcl_down_right em {
+    font-size: .09722222rem;
+    color: #666
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_price_list {
+    padding: .26388889rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_price_list .rcr_price_item {
+    width: .59722222rem;
+    height: .25rem;
+    line-height: .25rem;
+    font-size: .11111111rem;
+    color: #333;
+    background-color: #f0eff4;
+    text-align: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .rcr_btns_item {
+    width: 1.04166667rem;
+    height: .20833333rem;
+    font-size: .09722222rem;
+    color: #fff;
+    line-height: .20833333rem;
+    text-align: center
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .rcr_btns_item a {
+    color: #fff
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .price_detail_btn {
+    background-color: #20407d
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .buy_now_btn {
+    margin: 0 .10416667rem;
+    background-color: #f08300
+}
+
+#freight_details_container .freight_details_content .fdc_tabs_box .fdc_tabs .ivu-tabs .ivu-tabs-content .ivu-tabs-tabpane .airlines_offer_box .result_content .result_content_row .result_content_right .rcr_btns_list .customer_service_btn {
+    background-color: #2665b2
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-header .head_title {
+    text-align: center
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-header .head_title span {
+    font-size: .125rem
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content p {
+    font-size: .08333333rem;
+    color: #666
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding {
+    margin-top: .06944444rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding .ding_list {
+    text-align: center;
+    cursor: pointer
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding .ding_list .ding_item {
+    padding: .01388889rem .13888889rem;
+    border: .01041667rem solid #f08300;
+    border-radius: .13888889rem
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding .ding_list .ding_item.active {
+    background-color: #f08300
+}
+
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding .ding_list .ding_item.active p,
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-body .body_content .ding .ding_list .ding_item.active span,
+#freight_details_container .dingyue_modal .ivu-modal-wrap .ivu-modal .ivu-modal-content .ivu-modal-footer .ivu-btn span {
+    color: #fff
+}
+
+#freight_details_container .dashang_modal .ivu-modal .ivu-modal-content .ivu-modal-header .head_title {
+    text-align: center
+}
+
+#freight_details_container .dashang_modal .ivu-modal .ivu-modal-content .ivu-modal-header .head_title span {
+    font-size: .125rem
+}
+
+#freight_details_container .dashang_modal .ivu-modal .ivu-modal-content .ivu-modal-body .body_content p {
+    font-size: .08333333rem;
+    color: #666
+}
+
+#freight_details_container .dashang_modal .ivu-modal .ivu-modal-content .ivu-modal-body .body_content h2 {
+    font-size: .13888889rem;
+    font-weight: 700;
+    color: red
+}
+
+#freight_details_container .dashang_modal .ivu-modal .ivu-modal-content .ivu-modal-footer .ivu-btn span {
+    color: #fff
+}

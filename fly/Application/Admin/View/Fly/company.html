@@ -1,0 +1,94 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<script type="text/javascript" src="/Public/Home/DatePicker/WdatePicker.js"></script>
+	<div class="main-title">
+		<h2>航空公司</h2>
+	</div>
+	<div class="cf">
+	<div class="fl">
+			<a class="btn" href="{:U("fly/cedite")}">新 增</a>
+		</div>
+		
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="name" class="search-input" value="{:I('name')}" placeholder="请输入名称">
+				<a class="sch-btn" href="javascript:;" id="search" url="{:U('company')}"><i class="btn-search"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>中文名称</th>
+					<th>英文名称</th>
+					<th>航空公司代码</th>
+					<th>排序</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist name="list" id="vo">
+					<tr>
+						<!--<td style="background-color:gray;"><img src="{$vo.pic}" width="80"/></td>-->
+						<td>{$vo.id}</td>
+						<td>{$vo.cname}</td>
+						<td>{$vo.ename}</td>
+						<td>{$vo.code}</td>
+						<td>{$vo.sort}</td>
+						<td>
+							<a  title="编辑" href="{:U('fly/cedite','id='.$vo["id"])}">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="{:U('fly/cdel','id='.$vo["id"])}">删除</a>
+						</td>
+					</tr>
+					
+					</tr>
+				</volist>
+				
+			</tbody>
+		</table>        
+	</div>
+	<!-- 分页 -->
+    <div class="page">
+        {$page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$(function(){
+
+		})
+	</script>
+
+	<script type="text/javascript">
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+		$(function(){
+			//导航高亮
+			highlight_subnav('{:U('fly/company')}');
+		})
+	</script>
+</block>
