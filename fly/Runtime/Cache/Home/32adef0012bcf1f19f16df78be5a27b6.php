@@ -204,10 +204,10 @@
                                         <ul class="desc_list desc_right">
                                             <li class="desc_item">
                                                 <span>信息费用:</span>
-                                                <em>100</em></li>
+                                                <em>50</em></li>
                                             <li class="desc_item">
                                                 <span>主单费用:</span>
-                                                <em>80</em></li>
+                                                <em>50</em></li>
                                             <li class="desc_item">
                                                 <span>代理报关费用:</span>
                                                 <em>100</em></li>

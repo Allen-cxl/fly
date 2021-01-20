@@ -163,6 +163,7 @@ $(document).ready(function(e) {
 		<table>
 			<thead>
 				<tr>
+					<th>ID</th>
 					<th>始发港</th>
 					<th>目的港</th>
 					<th>航空公司</th>
@@ -174,6 +175,7 @@ $(document).ready(function(e) {
 			</thead>
 			<tbody>
 				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+						<td><?php echo ($vo["id"]); ?></td>
 						<td><?php echo ($vo["cport"]); ?></td>
 						<td><?php echo ($vo["mport"]); ?></td>
 						<td><?php echo ($cp[$vo["company"]]); ?></td>
